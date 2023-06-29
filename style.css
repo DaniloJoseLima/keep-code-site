@@ -1,39 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: #242424;
-  font-family: sans-serif;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
 
-h1,h2,h3,h4,h5 {
-  font-weight: 900;
-  color: #000000;
-}
-
-main {
-  display: block;
-  background-color: #ffffff;
-}
-
-nav.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 20;
-  background-color: #ffffff;
-}
 
 .wrapper {
   width: 100%;
   margin: 0 auto;
-}
-
-.container {
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 section.module p {
