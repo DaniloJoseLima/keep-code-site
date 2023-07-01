@@ -1,4 +1,9 @@
-
+p, a {
+  font-family: 'Baloo 2', cursive;
+}
+.stroke-text {
+  text-shadow:#fff 1px -1px, #fff -1px 1px, #fff 1px 1px, #fff -1px -1px
+}
 
 .wrapper {
   width: 100%;

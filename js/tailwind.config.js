@@ -10,7 +10,8 @@ tailwind.config = {
       }
     },
     fontFamily: {
-      'sans': ['Be Vietnam Pro', 'sans-serif']
+      'sans': ['Arvo'],
+      'serif ': ['Baloo 2', 'Baloo 2']
     }
   }
 }
