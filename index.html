@@ -15,6 +15,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="text/javascript" src="./js/tailwind.config.js"></script>
 
+  <script src="https://kit.fontawesome.com/c2c4802236.js" crossorigin="anonymous"></script>
+
   <title>Keep Code</title>
 </head>
 
@@ -103,17 +105,125 @@
       </div>
     </div>
   </section>
-  <section class="bg-gray-400">
+  <section class="bg-white py-32">
     <div class="container mx-auto">
-      <h1>Clientes</h1>
+      <div class="grid grid-cols-2 gap-5">
+        <div class="w-full h-full">
+          <h1 class="text-gray-light text-6xl">Tem algum projeto em mente?</h1>          
+          <a class="block text-center text-2xl text-white bg-blue-light cursor-pointer rounded py-5 w-60 mt-36 hover:opacity-70">Contate-nos</a>
+        </div>
+          <div class="grid grid-cols-3 gap-5">
+          <div class="grid grid-cols-1 gap-5">
+            <div class="w-[106px] h-[106px] bg-[#D9D9D9] rounded-lg"></div>
+            <div class="w-[106px] h-[106px] bg-[#D9D9D9] rounded-lg ml-auto"></div>
+            <div class="w-[106px] h-[106px] bg-[#D9D9D9] rounded-lg"></div>
+            <div class="w-[106px] h-[106px] bg-[#D9D9D9] rounded-lg ml-auto"></div>
+          </div>
+          <div class="grid grid-cols-1 gap-5">
+            <div class="w-full h-full bg-[#D9D9D9] rounded-lg"></div>
+            <div class="w-full h-full bg-[#D9D9D9] rounded-lg"></div>
+          </div>
+          <div class="grid grid-cols-1 gap-5">
+            <div class="w-full h-full bg-[#D9D9D9] rounded-lg"></div>
+            <div class="w-full h-full bg-[#D9D9D9] rounded-lg"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="bg-gray-light">
+  <section class="bg-[url('./img/client-img.png')] bg-cover py-32">
     <div class="container mx-auto">
-      <h1>Contato</h1>
+      <h1 class="text-white text-6xl text-center">Alguns dos nossos clientes</h1>
+      <div class="grid grid-flow-col auto-cols-max gap-5 justify-center mt-80">
+        <div class="flex justify-center items-center bg-[#FF0000]/20 w-60 h-60">
+          <img src="./img/clients/pao-queijo-tradicao.png">
+        </div>
+        <div class="flex justify-center items-center bg-[#FF0000]/20 w-60 h-60">
+          <img src="./img/clients/re9.png">
+        </div>        
+        <div class="flex justify-center items-center bg-[#FF0000]/20 w-60 h-60">
+          <img src="./img/clients/sl_propaganda_&_mensagem.png">
+        </div>
+        <div class="flex justify-center items-center bg-[#FF0000]/20 w-60 h-60">
+          <img src="./img/clients/mmm.png">
+        </div>
+        <div class="flex justify-center items-center bg-[#FF0000]/20 w-60 h-60">
+          <img src="./img/clients/cael_santana.png">
+        </div>
+      </div>
+      <p class="text-3xl text-center text-white mt-28">Acreditamos no valor das parcerias que duram, por isso somos gratos em ter vocês com a gente!</p>
     </div>
   </section>
-
+  <section class="py-32">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between">
+        <h1 class="text-gray-light text-6xl">O que nossos clientes estão dizendo</h1>
+        <div class="space-x-5">
+          <i class="fa-solid fa-arrow-left-long text-gray-light text-5xl cursor-pointer hover:opacity-70"></i>
+          <i class="fa-solid fa-arrow-right-long text-gray-light text-5xl cursor-pointer hover:opacity-70"></i>
+        </div>
+      </div>
+      <div class="grid grid-flow-col grid-cols-2 gap-5 justify-center mt-16">
+        <div class="max-w-[594px] bg-gray-dark rounded-lg p-6 text-white ml-auto">
+          <i class="fa-solid fa-quote-left text-5xl"></i>
+          <h1 class="text-3xl font-bold mt-11">Os resultados apresentados são muito satisfatórios</h1>
+          <p class="text-2xl mt-12">Muito obrigado por fornecerem um serviço tão excelente. Vocês foram incríveis, foram além para me ajudar. Estou extremamente satisfeito com a qualidade do serviço e com o quão atencioso e pontual vocês foram. Eu realmente amei este trabalho e dedicação.</p>
+          <div class="flex items-center mt-12">
+            <img src="./img/clients/mariana-torres.png" class="w-16 h-16 rounded-full">
+            <div class="ml-6">
+              <p class="text-2xl font-bold leading-none">Marina Torres Lima</p>
+              <p class="text-base leading-none">Cirurgiã-destista</p>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-[594px] bg-gray-dark rounded-lg p-6 text-white mr-auto">
+          <i class="fa-solid fa-quote-left text-5xl"></i>
+          <h1 class="text-3xl font-bold mt-11">Os resultados apresentados são muito satisfatórios</h1>
+          <p class="text-2xl mt-12">Muito obrigado por fornecerem um serviço tão excelente. Vocês foram incríveis, foram além para me ajudar. Estou extremamente satisfeito com a qualidade do serviço e com o quão atencioso e pontual vocês foram. Eu realmente amei este trabalho e dedicação.</p>
+          <div class="flex items-center mt-12">
+            <img src="./img/clients/mariana-torres.png" class="w-16 h-16 rounded-full">
+            <div class="ml-6">
+              <p class="text-2xl font-bold leading-none">Marina Torres Lima</p>
+              <p class="text-base leading-none">Cirurgiã-destista</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#FF0000]/20 py-32">
+    <div class="container mx-auto">
+      <h1 class="text-gray-light text-6xl">Vamos tomar um café?</h1>
+      <form class="mt-16">
+        <div class="grid grid-cols-3 gap-5">
+          <div>
+            <p class="text-base text-gray-light leading-none mb-2">Nome</p>
+            <input placeholder="Digite seu nome" class="rounded px-4 py-5 text-base w-full focus-visible:outline-none">
+          </div>
+          <div>
+            <p class="text-base text-gray-light leading-none mb-2">E-mail</p>
+            <input placeholder="Digite seu endereço de e-mail" class="rounded px-4 py-5 text-base w-full focus-visible:outline-none">
+          </div>
+          <div>
+            <p class="text-base text-gray-light leading-none mb-2">Telefone</p>
+            <input placeholder="Digite seu número de telefone" class="rounded px-4 py-5 text-base w-full focus-visible:outline-none">
+          </div>
+          <div class="col-span-full">
+            <textarea placeholder="Digite seu nome" class="rounded px-4 py-5 text-base w-full h-52 focus-visible:outline-none"></textarea>
+          </div> 
+          <div class="col-span-full justify-end mt-5">
+            <button type="submit" class="block float-right text-center text-2xl text-white bg-blue-light cursor-pointer rounded py-5 w-60 hover:opacity-70">Enviar mensagem</button>
+          </div>         
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="bg-blue-light py-9">
+    <div class="container mx-auto text-center">
+      <p class="text-white text-sm font-bold">Todos os direitos reservados</p>
+      <p class="text-white text-sm">© Copyright 2023 - Keep Code</p>
+    </div>
+  </footer>
 </body>
 
 </html>
