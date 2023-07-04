@@ -11,7 +11,10 @@ tailwind.config = {
     },
     fontFamily: {
       'sans': ['Arvo'],
-      'serif ': ['Baloo 2', 'Baloo 2']
+      'cursive ': ['Baloo Bhai 2']
+    },
+    dropShadow: {
+      '4xl': '4px 4px 10px 2px rgba(0, 0, 0, 0.25)',
     }
   }
 }
