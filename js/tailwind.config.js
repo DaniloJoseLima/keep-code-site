@@ -13,8 +13,8 @@ tailwind.config = {
       'sans': ['Arvo'],
       'cursive ': ['Baloo Bhai 2']
     },
-    dropShadow: {
-      '4xl': '4px 4px 10px 2px rgba(0, 0, 0, 0.25)',
+    boxShadow: {
+      '3xl': '4px 4px 10px 2px rgba(0, 0, 0, 0.25)',
     }
   }
 }

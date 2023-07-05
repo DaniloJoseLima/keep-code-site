@@ -16,19 +16,24 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="text/javascript" src="./js/tailwind.config.js"></script>
-
-  <script src="https://kit.fontawesome.com/c2c4802236.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/scripts.js" defer></script>
 
   <title>Keep Code</title>
 </head>
 
 <body>
-  <section class="bg-gray-light py-32">
-    <div class="container mx-auto">
-      <h1 class="text-2xl text-gray-light">Sobre a empresa</h1>
-    </div>
+  <section class="bg-[url('./img/astronaut.png')] bg-cover py-72">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-2 mt-6">
+        <div>
+          <img src="./img/keep-code.png" alt="keep_code">
+          <h1 class="text-5xl text-white mt-16">Ajudando você e sua empresa dar um próximo passo</h1>
+          <a
+            class="block text-center text-2xl text-white leading-none  cursor-pointer rounded border border-white py-5 w-60 mt-32 hover:opacity-70">Contate-nos</a>
+        </div>
+      </div>
   </section>
-  <section class="bg-blue-dark py-32">
+  <section class="bg-gradient-to-t from-blue-dark to-[#061737] py-32">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-12 gap-5">
         <div class="col-span-6">
@@ -37,8 +42,9 @@
             <h1 class="text-white text-6xl">Quem somos</h1>
             <p class="text-2xl text-gray-light">A Keep Code nasceu do sonho em empreender, termos nossa própria empresa,
               Cael Santana (Desenvolvedor Front End | UX/UI | Designer) e Danilo Lima (Desenvolvedor Front-End |
-              Desenvolvedor Back-End | DBA) com uma bagagem com mais de 20 anos de mercado, juntos decidiram trazer aos
-              clientes, atendimento personalizado para sua empresa.</p>
+              Desenvolvedor Back-End | DBA),
+              somando uma bagagem com mais de 20 anos de mercado, decidiram trazer aos clientes, o conhecimento
+              tecnológico, ajudando a todos ir mais longe, com um atendimento personalizado para sua empresa.</p>
           </div>
         </div>
         <div class="col-span-6 bg-blue-light rounded-xl"></div>
@@ -47,78 +53,62 @@
         <h2 class="text-white text-3xl"><span class="text-blue-light font-bold">Serviços que </span>prestamos!</h2>
       </div>
       <div class="grid grid-flow-col auto-cols-max gap-5 justify-center mt-8">
-        <div class="flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] drop-shadow-4xl">
-          <p class="text-white text-2xl">Design</p>
-          <a
+        <div
+          class="bg-[url('./img/design.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">Design</p>
+          <!-- <a
             class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
-            mais</a>
+            mais</a> -->
         </div>
-        <div class="flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px]">
-          <p class="text-white text-2xl">UX/UI</p>
-          <a
+        <div
+          class="bg-[url('./img/ux-ui.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">UX/UI</p>
+          <!-- <a
             class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
-            mais</a>
+            mais</a> -->
         </div>
-        <div class="flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px]">
-          <p class="text-white text-2xl">Sites</p>
-          <a
+        <div
+          class="bg-[url('./img/sites.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">Sites</p>
+          <!-- <a
             class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
-            mais</a>
+            mais</a> -->
         </div>
-        <div class="flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px]">
-          <p class="text-white text-2xl">Desenvolvimento Web</p>
-          <a
+        <div
+          class="bg-[url('./img/web.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">Desenvolvimento Web</p>
+          <!-- <a
             class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
-            mais</a>
+            mais</a> -->
         </div>
       </div>
     </div>
   </section>
-  <section class="grid grid-cols-12">
-    <div class="col-span-4">
-      <img class="w-full" src="./img/01-img.png">
+  <section class="grid grid-cols-6">
+    <div class="col-span-2 flex items-center justify-center bg-white">
+      <h1 class="text-6xl text-white font-bold stroke-text">Projetos Recentes</h1>
     </div>
-    <div class="col-span-4">
-      <div class="grid grid-cols-2">
-        <div class="flex items-center justify-center bg-blue-dark p-3">
-          <h1 class="text-6xl text-blue-dark font-bold stroke-text">Projetos Recentes</h1>
-        </div>
-        <img class="w-full" src="./img/temp.png">
-        <img class="w-full" src="./img/02-img.png">
-        <img class="w-full" src="./img/03-img.png">
-      </div>
+    <div class="bg-[#F5C94C]"></div>
+    <img class="w-full" src="./img/01-img.png" alt="Café Passado">
+    <div class="col-span-2 flex items-center justify-center bg-[#771884] px-20">
+      <h1 class="text-5xl text-white font-bold">O próximo projeto pode ser o seu!</h1>
     </div>
-    <div class="col-span-4">
-      <img class="w-full" src="./img/04-img.png">
+    <img class="col-span-2 h-full" src="./img/02-img.png" alt="SL">
+    <img class="col-span-2 h-full" src="./img/03-img.png" alt="MMM Odontologia">
+    <img class="col-span-2 h-full" src="./img/04-img.png" alt="Pão de queijo tradição">
+    <div class="col-span-2 flex items-center justify-center bg-[#E94832] px-14">
+      <h1 class="text-5xl text-white font-bold">Solicite um orçamento conosco</h1>
     </div>
-    <div class="col-span-4">
-      <div class="grid grid-cols-2">
-        <img class="w-full" src="./img/05-img.png">
-        <img class="w-full" src="./img/06-img.png">
-        <img class="w-full" src="./img/07-img.png">
-        <div class="flex items-center justify-center bg-[#1EB720] p-3">
-          <h1 class="text-6xl stroke-text font-bold leading-tight text-[#1EB720]">Seu projeto Aqui</h1>
-        </div>
-      </div>
-    </div>
-    <div class="col-span-4">
-      <img class="w-full" src="./img/08-img.png">
-    </div>
-    <div class="col-span-4">
-      <div class="grid grid-cols-2">
-        <img class="w-full" src="./img/09-img.png">
-        <img class="w-full" src="./img/10-img.png">
-        <img class="w-full" src="./img/11-img.png">
-        <div class="flex items-center justify-center bg-white p-2">
-          <a
-            class="text-center text-2xl text-blue-dark leading-none cursor-pointer rounded border-2 border-blue-dark py-5 w-60 hover:opacity-70">Veja
-            mais</a>
-        </div>
-      </div>
-    </div>
+    <img class="w-full" src="./img/05-img.png" alt="Pixel">
+    <div class="bg-[#8FD08A]"></div>
+    <!-- <div class="col-span-2 flex items-center justify-center bg-white p-2">
+      <a
+        class="text-center text-2xl text-blue-dark leading-none cursor-pointer rounded border-2 border-blue-dark py-5 w-60 hover:opacity-70">Veja
+        mais</a>
+    </div> -->
   </section>
   <section class="bg-white py-32">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 gap-5">
         <div class="w-full h-full">
           <h1 class="text-gray-light text-6xl">Tem algum projeto em mente?</h1>
@@ -128,32 +118,32 @@
         <div class="grid grid-cols-3 gap-5">
           <div class="grid grid-cols-1 gap-5">
             <div class="grid grid-cols-2">
-              <img class="w-full rounded-lg" src="./img/12-img.png">
+              <img class="w-full rounded-lg shadow-3xl" src="./img/12-img.png">
             </div>
             <div class="grid grid-cols-2">
               <div></div>
-              <img class="h-full rounded-lg" src="./img/13-img.png">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/13-img.png">
             </div>
             <div class="grid grid-cols-2">
-              <img class="h-full rounded-lg" src="./img/14-img.png">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/14-img.png">
             </div>
             <div class="grid grid-cols-2">
               <div></div>
-              <img class="h-full rounded-lg" src="./img/15-img.png">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/15-img.png">
             </div>
           </div>
           <div class="col-span-2 grid grid-cols-2 gap-5">
-            <div class="drop-shadow-md">
-              <img class="h-full rounded-lg" src="./img/16-img.png">
+            <div class="">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/16-img.png">
             </div>
-            <div class="flex items-center w-full h-full bg-[#771884] rounded-lg drop-shadow-md p-6">
+            <div class="flex items-center w-full h-full bg-[#771884] rounded-lg shadow-3xl p-6">
               <p class="text-2xl text-white">Projetos <b>personalizados</b> com a cara da sua empresa!</p>
             </div>
-            <div class="flex items-center w-full h-full bg-[#DA2957] rounded-lg drop-shadow-md p-6">
+            <div class="flex items-center w-full h-full bg-[#DA2957] rounded-lg shadow-3xl p-6">
               <p class="text-2xl text-white">Nós ajudamos você a sair do anonimato <b>crie seu site hoje!</b></p>
             </div>
-            <div>
-              <img class="h-full rounded-lg" src="./img/17-img.png">
+            <div class="">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/17-img.png">
             </div>
           </div>
         </div>
@@ -161,31 +151,46 @@
     </div>
   </section>
   <section class="bg-[url('./img/client-img.png')] bg-cover py-32">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-6">
       <h1 class="text-white text-6xl text-center">Alguns dos nossos clientes</h1>
       <div class="grid grid-flow-col auto-cols-max gap-5 justify-center mt-80">
         <div class="flex justify-center items-center w-60 h-60">
-          <img src="./img/clients/pao-queijo-tradicao.png">
+          <div class="group cursor-pointer">
+            <img class="transition ease-in-out delay-150 duration-300 group-hover:hidden" src="./img/clients/pao-queijo-tradicao.png">
+            <img class="hidden transition ease-in-out delay-150 group-hover:block group-hover:-translate-y-1 group-hover:scale-110 duration-300" src="./img/clients/pao-queijo-tradicao-color.png">
+          </div>
         </div>
         <div class="flex justify-center items-center w-60 h-60">
-          <img src="./img/clients/re9.png">
+          <div class="group cursor-pointer">
+            <img class="group-hover:hidden" src="./img/clients/re9.png">
+            <img class="hidden transition ease-in-out delay-150 group-hover:block group-hover:-translate-y-1 group-hover:scale-110 duration-300" src="./img/clients/re9.png">
+          </div>
         </div>
         <div class="flex justify-center items-center w-60 h-60">
-          <img src="./img/clients/sl_propaganda_&_mensagem.png">
+          <div class="group cursor-pointer">
+            <img class="group-hover:hidden" src="./img/clients/sl_propaganda_&_mensagem.png">
+            <img class="hidden transition ease-in-out delay-150 group-hover:block group-hover:-translate-y-1 group-hover:scale-110 duration-300" src="./img/clients/sl_propaganda_&_mensagem-color.png">
+          </div>
         </div>
         <div class="flex justify-center items-center w-60 h-60">
-          <img src="./img/clients/mmm.png">
+          <div class="group cursor-pointer">
+            <img class="group-hover:hidden" src="./img/clients/mmm.png">
+            <img class="hidden transition ease-in-out delay-150 group-hover:block group-hover:-translate-y-1 group-hover:scale-110 duration-300" src="./img/clients/mmm-color.png">
+          </div>
         </div>
         <div class="flex justify-center items-center w-60 h-60">
-          <img src="./img/clients/cael_santana.png">
+          <div class="group cursor-pointer">
+            <img class="group-hover:hidden" src="./img/clients/cael_santana.png">
+            <img class="hidden transition ease-in-out delay-150 group-hover:block group-hover:-translate-y-1 group-hover:scale-110 duration-300" src="./img/clients/cael_santana-color.png">
+          </div>
         </div>
       </div>
       <p class="text-3xl text-center text-white mt-28">Acreditamos no valor das parcerias que duram, por isso somos
         gratos em ter vocês com a gente!</p>
     </div>
   </section>
-  <section class="py-32 bg-[url('./img/02-client-img.png')]">
-    <div class="container mx-auto">
+  <section class="py-32 pb-72 bg-[url('./img/02-client-img.png')]">
+    <div class="container mx-auto px-6">
       <div class="grid grid-cols-2">
         <div class="col-span-1">
           <div class="flex items-center justify-between">
@@ -193,26 +198,54 @@
           </div>
           <div class="grid grid-cols-1 gap-5 mt-16">
             <div class="ml-auto">
-              <div class="max-w-[594px] bg-gray-dark rounded-lg p-6 text-white">
-                <i class="fa-solid fa-quote-left text-5xl"></i>
-                <h1 class="text-3xl font-bold mt-12">Os resultados apresentados são muito satisfatórios</h1>
-                <p class="text-2xl mt-12">Muito obrigado por fornecerem um serviço tão excelente. Vocês foram incríveis,
-                  foram
-                  além para me ajudar. Estou extremamente satisfeito com a qualidade do serviço e com o quão atencioso e
-                  pontual vocês foram.</p>
-                <p class="text-2xl">Eu realmente amei este trabalho e dedicação.</p>
-                <div class="flex items-center mt-12">
-                  <img src="./img/clients/mariana-torres.png" class="w-16 h-16 rounded-full">
-                  <div class="ml-6">
-                    <p class="text-2xl font-bold leading-none">Marina Torres Lima</p>
-                    <p class="text-base leading-none">Cirurgiã-destista</p>
+              <div class="div-sliders" id="sliders">
+                <div
+                  class="active slider max-w-[594px] min-h-[571px] bg-gray-dark rounded-lg p-6 text-white shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
+                    desenvolver algo que traga valor para minha empresa!</h1>
+                  <p class="text-2xl mt-12">Eu achei lindo! Reflete exatamente o que eu queria passar aos que forem
+                    buscar pela minha marca.</p>
+                  <div class="absolute bottom-6 flex items-center mt-12">
+                    <img src="./img/clients/mariana-marin-monteiro.png" class="w-16 h-16 rounded-full">
+                    <div class="ml-6">
+                      <p class="text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
+                      <p class="text-base leading-none">Cirurgiã-destista</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider max-w-[594px] min-h-[571px] bg-gray-dark rounded-lg p-6 text-white shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Extremamente profisisonal</h1>
+                  <p class="text-2xl mt-12">Superou minhas expectativas, um trabalho assertivo, rápido e com valor
+                    justo!</p>
+                  <div class="absolute bottom-6 flex items-center mt-12">
+                    <img src="./img/clients/emerson-quaresma.png" class="w-16 h-16 rounded-full">
+                    <div class="ml-6">
+                      <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
+                      <p class="text-base leading-none">Empresário</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider max-w-[594px] min-h-[571px] bg-gray-dark rounded-lg p-6 text-white shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Profissionalismo puro</h1>
+                  <p class="text-2xl mt-12">Excelente</p>
+                  <div class="absolute bottom-6 flex items-center mt-12">
+                    <img src="./img/clients/leonardo.png" class="w-16 h-16 rounded-full">
+                    <div class="ml-6">
+                      <p class="text-2xl font-bold leading-none">Leonardo</p>
+                      <p class="text-base leading-none">Empresário</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="text-center space-x-5 mt-6">
-                <i class="fa-solid fa-arrow-left-long text-gray-light text-5xl cursor-pointer hover:opacity-70"></i>
-                <i class="fa-solid fa-arrow-right-long text-gray-light text-5xl cursor-pointer hover:opacity-70"></i>
-              </div>
+              <!-- <div class="flex justify-center items-center space-x-5 mt-6 text-blue-100">
+                <img src="./img/icons/arrow-inactive.svg" onclick="returnImagem()"
+                  class="cursor-pointer rotate-180 hover:opacity-70">
+                <img src="./img/icons/arrow-active.svg" onclick="avancarImagem()"
+                  class="cursor-pointer filter hover:opacity-70">
+              </div> -->
             </div>
           </div>
         </div>
@@ -220,32 +253,32 @@
     </div>
   </section>
   <section class="py-32">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-6">
       <h1 class="text-gray-light text-6xl">Vamos tomar um café?</h1>
       <div class="grid grid-cols-2 gap-5 mt-16">
         <div>
           <div class="grid grid-cols-3 gap-5">
             <div class="col-span-1 grid grid-cols-1 gap-5">
               <div class="grid grid-cols-2 gap-5">
-                <img class="w-full rounded-lg" src="./img/k.png">
+                <img class="w-full rounded-lg shadow-3xl" src="./img/k.png">
               </div>
               <div class="grid grid-cols-2 gap-5">
                 <div></div>
-                <img class="w-full rounded-lg" src="./img/p.png">
+                <img class="w-full rounded-lg shadow-3xl" src="./img/p.png">
               </div>
               <div class="grid grid-cols-2 gap-5">
-                <img class="w-full rounded-lg" src="./img/c.png">
+                <img class="w-full rounded-lg shadow-3xl" src="./img/c.png">
               </div>
               <div class="grid grid-cols-2 gap-5">
                 <div></div>
-                <img class="w-full rounded-lg" src="./img/d.png">
+                <img class="w-full rounded-lg shadow-3xl" src="./img/d.png">
               </div>
             </div>
             <div class="col-span-2 grid grid-cols-2 gap-5">
-              <img class="h-full rounded-lg" src="./img/18-img.png">
-              <img class="h-full rounded-lg" src="./img/19-img.png">
-              <img class="h-full rounded-lg" src="./img/20-img.png">
-              <div class="flex items-center w-full h-full bg-blue-light rounded-lg p-6">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/18-img.png">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/19-img.png">
+              <img class="h-full rounded-lg shadow-3xl" src="./img/20-img.png">
+              <div class="flex items-center w-full h-full bg-blue-light rounded-lg p-6 shadow-3xl">
                 <p class="text-3xl leading-snug text-white">O próximo <b>projeto</b> pode ser o seu!</p>
               </div>
             </div>
@@ -283,7 +316,7 @@
     </div>
   </section>
   <footer class="bg-blue-dark py-9">
-    <div class="container mx-auto text-center">
+    <div class="container mx-auto text-center px-6">
       <div class="grid grid-cols-3 gap-5 items-center">
         <div class="text-left">
           <img src="./img/keep_code.png">

@@ -2,7 +2,7 @@ p, a, button, input, textarea {
   font-family: 'Baloo Bhai 2', 'cursive' !important;
 }
 .stroke-text {
-  text-shadow:#fff 1px -1px, #fff -1px 1px, #fff 1px 1px, #fff -1px -1px
+  text-shadow:#0F357D 1px -1px, #0F357D -1px 1px, #0F357D 1px 1px, #0F357D -1px -1px
 }
 
 .wrapper {
@@ -75,4 +75,26 @@ section.module.parallax h1 {
   font-size: 78px;
   z-index: 10;
   text-transform: uppercase;
+}
+
+.slider{
+  position:absolute;
+  width:100%;
+  height:100%;
+  margin-left:100%;
+
+  -webkit-transition: margin-left 500ms ease-in;
+  -moz-transition: margin-left 500ms ease-in;
+  -o-transition: margin-left 500ms ease-in;
+  transition: margin-left 500ms ease-in;
+}
+.div-sliders{
+  overflow:hidden;
+  position: relative;
+  min-width: 594px;
+  min-height: 594px;
+}
+
+.active{
+  margin-left: 0%;
 }
