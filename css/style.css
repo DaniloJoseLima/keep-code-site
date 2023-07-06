@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p, a, button, input, textarea {
   font-family: 'Baloo Bhai 2', 'cursive' !important;
 }
@@ -91,8 +95,6 @@ section.module.parallax h1 {
 .div-sliders{
   overflow:hidden;
   position: relative;
-  min-width: 594px;
-  min-height: 594px;
 }
 
 .active{
