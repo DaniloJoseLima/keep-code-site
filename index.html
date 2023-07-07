@@ -1,66 +1,360 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="./css/style.css" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-  <title>Designer Coffee Code</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="./js/tailwind.config.js"></script>
+  <script type="text/javascript" src="./js/scripts.js" defer></script>
+
+  <title>Keep Code</title>
 </head>
+
 <body>
-  <div class="wrapper">
-    <main>
-      <section class="module parallax parallax-1">
-        <h1>Designer Coffee Code</h1>
-      </section>
-      <section class="module content">
-        <div class="container">
-          <h2>Sobre nós</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque deleniti eveniet nulla dolores? Consequuntur harum voluptas quod veniam doloremque doloribus quam minus, facilis, suscipit sit qui cumque consectetur porro.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptates vitae ad quidem. Et, itaque nobis perspiciatis, eum architecto, magni sed provident natus dolorem quisquam deserunt eos ut pariatur possimus?
-            Necessitatibus quaerat alias illo ipsa tenetur iure numquam! Voluptas officiis unde porro dolore accusantium amet quae voluptate distinctio dicta rerum quam soluta dolores ab delectus nobis aliquam, suscipit magnam! Voluptatibus.
-            Ipsam dolores velit, quam esse, qui quisquam sunt praesentium cumque dolorem illum magni sapiente iste tempore exercitationem deserunt in aliquid vel fugit numquam obcaecati dolore et. Corrupti quam ab voluptatibus!
-          </p>
+  <section class="bg-[url('./img/astronaut.png')] bg-cover py-36 lg:py-72">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 mt-6">
+        <div>
+          <img src="./img/keep-code.png" alt="keep_code">
+          <h1 class="text-5xl text-white mt-16">Ajudando você e sua empresa dar um próximo passo</h1>
+          <a class="block text-center text-2xl text-white leading-none bg-blue-light cursor-pointer rounded py-5 w-60 mt-32 hover:opacity-70"
+            href="#contact">Contate-nos</a>
         </div>
-      </section>
-      <section class="module parallax parallax-2">
-        <h1>Desenhar -> Café -> Codar ☻</h1>
-      </section>
-      <section class="module content">
-        <div class="container">
-          <h2>Alguns de nossos clientes</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque deleniti eveniet nulla dolores? Consequuntur harum voluptas quod veniam doloremque doloribus quam minus, facilis, suscipit sit qui cumque consectetur porro.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque deleniti eveniet nulla dolores? Consequuntur harum voluptas quod veniam doloremque doloribus quam minus, facilis, suscipit sit qui cumque consectetur porro.
-          </p>
+      </div>
+  </section>
+  <section class="bg-gradient-to-t from-blue-dark to-[#061737] py-16 lg:py-32">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div>
+          <p class="text-2xl text-gray-light">Sobre nós</p>
+          <div class="mt-16 space-y-8">
+            <h1 class="text-white text-6xl">Quem somos</h1>
+            <p class="text-2xl text-gray-light">A <b class="text-white">Keep</b> <b class="text-blue-light">Code</b> nasceu do sonho em empreender, termos nossa própria empresa,
+              Cael Santana (Desenvolvedor Front End | UX/UI | Designer) e Danilo Lima (Desenvolvedor Front-End |
+              Desenvolvedor Back-End | DBA).
+              Somando uma bagagem com mais de 20 anos de mercado, decidiram trazer aos clientes, o conhecimento
+              tecnológico, ajudando a todos irem mais longe em seus projetos na web, com mentoria, estratégias e
+              atendimento personalizado para você e sua empresa.</p>
+          </div>
         </div>
-      </section>
-      <section class="module parallax parallax-3">
-        <h1>A arte de codar</h1>
-      </section>
-      <section class="module content">
-        <div class="container">
-          <h2>Nossa especialidade</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque deleniti eveniet nulla dolores? Consequuntur harum voluptas quod veniam doloremque doloribus quam minus, facilis, suscipit sit qui cumque consectetur porro.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque deleniti eveniet nulla dolores? Consequuntur harum voluptas quod veniam doloremque doloribus quam minus, facilis, suscipit sit qui cumque consectetur porro.
-          </p>
+        <div class="bg-blue-light rounded-xl">
+          <img alt="Quem somos" src="./img/quem-somos.png" class="flex items-center justify-center h-full">
         </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-
+      </div>
+      <div class="mt-32">
+        <h2 class="text-white text-3xl"><span class="text-blue-light font-bold">Serviços que </span>prestamos!</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-none lg:grid-flow-col auto-cols-max gap-5 justify-center mt-8">
+        <div
+          class="bg-[url('./img/design.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">Design</p>
+          <!-- <a
+            class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
+            mais</a> -->
+        </div>
+        <div
+          class="bg-[url('./img/ux-ui.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">UX/UI</p>
+          <!-- <a
+            class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
+            mais</a> -->
+        </div>
+        <div
+          class="bg-[url('./img/sites.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">Sites</p>
+          <!-- <a
+            class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
+            mais</a> -->
+        </div>
+        <div
+          class="bg-[url('./img/web.png')] flex flex-col justify-between bg-blue-light rounded-xl p-4 w-[232px] h-[232px] shadow-3xl">
+          <p class="text-[#0B2860] text-2xl leading-none">Desenvolvimento Web</p>
+          <!-- <a
+            class="text-white text-center text-xl leading-none border border-white rounded-2xl p-2.5 w-[140px] ml-auto cursor-pointer hover:opacity-70">Saiba
+            mais</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
+    <div class="md:col-span-2 flex items-center justify-center bg-white px-5 py-10">
+      <h1 class="text-center md:text-left text-6xl text-white font-bold stroke-text">Projetos Recentes</h1>
+    </div>
+    <img class="h-full w-full lg:w-auto" src="./img/21-img.png" alt="Danilo Lima">
+    <img class="h-full w-full lg:w-auto" src="./img/01-img.png" alt="Café Passado">
+    <div class="md:col-span-2 flex items-center justify-center bg-[#771884] px-20 py-10">
+      <h1 class="text-center md:text-left text-5xl text-white font-bold">O próximo projeto pode ser o seu!</h1>
+    </div>
+    <img class="md:col-span-2 h-full w-full lg:w-auto" src="./img/02-img.png" alt="SL">
+    <img class="md:col-span-2 h-full w-full lg:w-auto" src="./img/03-img.png" alt="MMM Odontologia">
+    <img class="md:col-span-2 h-full w-full lg:w-auto" src="./img/04-img.png" alt="Pão de queijo tradição">
+    <div class="md:col-span-2 flex items-center justify-center bg-[#E94832] px-14 py-10">
+      <h1 class="text-center md:text-left text-5xl text-white font-bold">Solicite um orçamento conosco</h1>
+    </div>
+    <img class="h-full w-full lg:w-auto" src="./img/05-img.png" alt="Pixel">
+    <img class="h-full w-full lg:w-auto" src="./img/22-img.png" alt="O">
+    <!-- <div class="col-span-2 flex items-center justify-center bg-white p-2">
+      <a
+        class="text-center text-2xl text-blue-dark leading-none cursor-pointer rounded border-2 border-blue-dark py-5 w-60 hover:opacity-70">Veja
+        mais</a>
+    </div> -->
+  </section>
+  <section class="bg-white py-16 lg:py-32">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div class="w-full h-full">
+          <h1 class="text-gray-light text-6xl">Tem algum projeto em mente?</h1>
+          <a class="block text-center text-2xl text-white leading-none bg-blue-light cursor-pointer rounded py-5 w-60 mt-32 hover:opacity-70"
+            href="#contact">Contate-nos</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-16 lg:mt-0">
+          <div class="grid grid-cols-1 gap-5">
+            <div class="grid grid-cols-2">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/12-img.png">
+            </div>
+            <div class="grid grid-cols-2">
+              <div></div>
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/13-img.png">
+            </div>
+            <div class="grid grid-cols-2">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/14-img.png">
+            </div>
+            <div class="grid grid-cols-2">
+              <div></div>
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/15-img.png">
+            </div>
+          </div>
+          <div class="md:col-span-2 grid grid-cols-2 gap-5">
+            <div class="">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/16-img.png">
+            </div>
+            <div class="flex items-center w-full h-full bg-[#771884] rounded-lg shadow-3xl p-3 xl:p-6">
+              <p class="text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white">Projetos <b>personalizados</b> com a cara da sua empresa!</p>
+            </div>
+            <div class="flex items-center w-full h-full bg-[#DA2957] rounded-lg shadow-3xl p-3 xl:p-6">
+              <p class="text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white">Nós ajudamos você a sair do anonimato <b>crie seu site hoje!</b></p>
+            </div>
+            <div class="">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/17-img.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[url('./img/client-img.png')] bg-cover py-16 lg:py-32">
+    <div class="container mx-auto px-6">
+      <h1 class="text-white text-6xl text-center">Alguns dos nossos clientes</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-max gap-5 justify-center mt-16 lg:mt-60 xl:mt-80">
+        <div class="flex justify-center items-center w-60 h-60">
+          <div class="flex justify-center items-center group cursor-pointer w-60 h-60">
+            <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+              src="./img/clients/pao-queijo-tradicao.png">
+            <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+              src="./img/clients/pao-queijo-tradicao-color.png">
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-60 h-60">
+          <div class="flex justify-center items-center group cursor-pointer w-60 h-60">
+            <img class="absolute group-hover:opacity-0 transition delay-150 duration-300" src="./img/clients/re9.png">
+            <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+              src="./img/clients/re9-color.png">
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-60 h-60">
+          <div class="flex justify-center items-center group cursor-pointer w-60 h-60">
+            <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+              src="./img/clients/sl_propaganda_&_mensagem.png">
+            <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+              src="./img/clients/sl_propaganda_&_mensagem-color.png">
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-60 h-60">
+          <div class="flex justify-center items-center group cursor-pointer w-60 h-60">
+            <img class="absolute group-hover:opacity-0 transition delay-150 duration-300" src="./img/clients/mmm.png">
+            <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+              src="./img/clients/mmm-color.png">
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-60 h-60">
+          <div class="flex justify-center items-center group cursor-pointer w-60 h-60">
+            <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+              src="./img/clients/cael_santana.png">
+            <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+              src="./img/clients/cael_santana-color.png">
+          </div>
+        </div>
+      </div>
+      <p class="text-3xl text-center text-white mt-14 lg:mt-28">Acreditamos no valor das parcerias que duram, por isso somos
+        gratos em ter vocês com a gente!</p>
+    </div>
+  </section>
+  <section class="py-16 lg:py-32 pb-72 bg-[url('./img/02-client-img.png')]">
+    <div class="container mx-auto px-6">
+      <div class="grid xl:grid-cols-2">
+        <div class="col-span-1">
+          <div class="flex items-center justify-between">
+            <h1 class="text-gray-light text-6xl">O que nossos clientes estão dizendo</h1>
+          </div>
+          <div class="grid grid-cols-1 gap-5 mt-16">
+            <div class="m-auto xl:ml-auto">
+              <div class="div-sliders min-w-[80vw] sm:min-w-[594px] min-h-[594px]" id="sliders">
+                <div
+                  class="active slider sm:max-w-[594px] min-h-[571px] bg-gray-dark rounded-lg p-6 text-white shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
+                    desenvolver algo que traga valor para minha empresa!</h1>
+                  <p class="text-2xl mt-12">Eu achei lindo! Reflete exatamente o que eu queria passar aos que forem
+                    buscar pela minha marca.</p>
+                  <div class="absolute bottom-6 flex items-center mt-12">
+                    <img src="./img/clients/mariana-marin-monteiro.png" class="w-16 h-16 rounded-full">
+                    <div class="ml-6">
+                      <p class="text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
+                      <p class="text-base leading-none">Cirurgiã-destista</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider sm:max-w-[594px] min-h-[571px] bg-gray-dark rounded-lg p-6 text-white shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Extremamente profisisonal</h1>
+                  <p class="text-2xl mt-12">Superou minhas expectativas, um trabalho assertivo, rápido e com valor
+                    justo!</p>
+                  <div class="absolute bottom-6 flex items-center mt-12">
+                    <img src="./img/clients/emerson-quaresma.png" class="w-16 h-16 rounded-full">
+                    <div class="ml-6">
+                      <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
+                      <p class="text-base leading-none">Empresário</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider sm:max-w-[594px] min-h-[571px] bg-gray-dark rounded-lg p-6 text-white shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Profissionalismo puro</h1>
+                  <p class="text-2xl mt-12">Excelente</p>
+                  <div class="absolute bottom-6 flex items-center mt-12">
+                    <img src="./img/clients/leonardo.png" class="w-16 h-16 rounded-full">
+                    <div class="ml-6">
+                      <p class="text-2xl font-bold leading-none">Leonardo</p>
+                      <p class="text-base leading-none">Empresário</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="flex justify-center items-center space-x-5 mt-6 text-blue-100">
+                <img src="./img/icons/arrow-inactive.svg" onclick="returnImagem()"
+                  class="cursor-pointer rotate-180 hover:opacity-70">
+                <img src="./img/icons/arrow-active.svg" onclick="avancarImagem()"
+                  class="cursor-pointer filter hover:opacity-70">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-16 lg:py-32">
+    <div class="container mx-auto px-6">
+      <h1 class="text-gray-light text-6xl">Vamos tomar um café?</h1>
+      <div class="grid xl:grid-cols-2 gap-5 mt-16">
+        <div>
+          <div class="grid md:grid-cols-3 gap-5">
+            <div class="col-span-1 grid grid-cols-1 gap-5">
+              <div class="grid grid-cols-2 gap-5">
+                <img class="w-full rounded-lg shadow-3xl" src="./img/k.png">
+              </div>
+              <div class="grid grid-cols-2 gap-5">
+                <div></div>
+                <img class="w-full rounded-lg shadow-3xl" src="./img/p.png">
+              </div>
+              <div class="grid grid-cols-2 gap-5">
+                <img class="w-full rounded-lg shadow-3xl" src="./img/c.png">
+              </div>
+              <div class="grid grid-cols-2 gap-5">
+                <div></div>
+                <img class="w-full rounded-lg shadow-3xl" src="./img/d.png">
+              </div>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-2 gap-5">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/18-img.png">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/19-img.png">
+              <img class="h-full w-full md:w-auto rounded-lg shadow-3xl" src="./img/20-img.png">
+              <div class="flex items-center w-full h-full bg-blue-light rounded-lg p-6 shadow-3xl">
+                <p class="text-3xl leading-snug text-white">O próximo <b>projeto</b> pode ser o seu!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form id="form" action="https://formsubmit.co/danilolima40@gmail.com" method="POST" class="">
+          <input type="hidden" name="_cc" value="cael.tecnologia@gmail.com">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="grid grid-cols-1 gap-5">
+            <div>
+              <p class="text-base text-gray-light font-semibold leading-none mb-2">Nome</p>
+              <input placeholder="Digite seu nome" name="nome"
+                class="border border-gray-light rounded px-4 h-[52px] text-base w-full focus-visible:outline-none">
+            </div>
+            <div>
+              <p class="text-base text-gray-light font-semibold leading-none mb-2">E-mail</p>
+              <input placeholder="Digite seu endereço de e-mail" name="email"
+                class="border border-gray-light rounded px-4 h-[52px] text-base w-full focus-visible:outline-none">
+            </div>
+            <div>
+              <p class="text-base text-gray-light font-semibold leading-none mb-2">Telefone</p>
+              <input placeholder="Digite seu número de telefone" name="telefone" id="phone"
+                class="border border-gray-light rounded px-4 h-[52px] text-base w-full focus-visible:outline-none">
+            </div>
+            <div class="col-span-full">
+              <textarea placeholder="Digite seu nome" name="descrição"
+                class="border border-gray-light rounded px-4 py-5 text-base w-full h-52 focus-visible:outline-none"></textarea>
+            </div>
+            <div class="col-span-full justify-end mt-5">
+              <button type="submit"
+                class="block float-right text-center text-2xl text-white leading-none bg-blue-light cursor-pointer rounded py-5 w-60 hover:opacity-70">Enviar
+                mensagem</button>
+            </div>
+          </div>
+        </form>
+        <div id="formSuccess" class="flex-col items-center justify-center px-6 space-y-10 hidden">
+          <h1 class="text-blue-dark text-5xl text-center">Mensagem enviada com sucesso, em breve retornaremos o cantato.</h1>
+          <button type="button" class="block float-right text-center text-2xl text-white leading-none bg-blue-light cursor-pointer rounded py-5 px-2 hover:opacity-70" onclick="resetForm()">Enviar nova mensagem</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-blue-dark py-9">
+    <div class="container mx-auto text-center px-6">
+      <div class="grid md:grid-cols-3 gap-5 items-center">
+        <div class="text-center md:text-left">
+          <img class="m-auto md:m-0" src="./img/keep_code.png">
+          <p class="text-white text-sm">© Copyright 2023 - Keep Code</p>
+        </div>
+        <div class="text-center">
+          <p class="text-white text-sm font-bold">Todos os direitos reservados</p>
+        </div>
+        <div class="text-center md:text-right">
+          <div class="flex items-center justify-center md:justify-end space-x-2">
+            <p class="text-white text-base">@keep.code</p>
+            <img src="./img/icons/instagram.png">
+          </div>
+          <div class="flex items-center justify-center md:justify-end space-x-2">
+            <p class="text-white text-base">(11) 97197-4484</p>
+            <img src="./img/icons/whatsapp.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
