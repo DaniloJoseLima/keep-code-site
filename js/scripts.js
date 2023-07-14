@@ -8,7 +8,7 @@ let url = window.location.href;
 url = url.split(/[?#]/)[0];
 const form = document.querySelector('#form');
 form.innerHTML += `
-<input type="hidden" name="_next" value="${url}#contact">
+<input type="hidden" name="_next" value="${url}?send=true#contact">
 `
 
 if (value) {
