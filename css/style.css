@@ -80,23 +80,3 @@ section.module.parallax h1 {
   z-index: 10;
   text-transform: uppercase;
 }
-
-.slider{
-  position:absolute;
-  width:100%;
-  height:100%;
-  margin-left:100%;
-
-  -webkit-transition: margin-left 500ms ease-in;
-  -moz-transition: margin-left 500ms ease-in;
-  -o-transition: margin-left 500ms ease-in;
-  transition: margin-left 500ms ease-in;
-}
-.div-sliders{
-  overflow:hidden;
-  position: relative;
-}
-
-.active{
-  margin-left: 0%;
-}
