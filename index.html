@@ -80,8 +80,8 @@
   </nav>
   <scroll-container id="home" class="grid">
     <section class="container px-4 bg-white mx-auto pt-36">
-      <div class="flex items-center justify-between space-x-10">
-        <div class="inline-block max-w-[453px] space-y-20">
+      <div class="grid xl:flex items-center justify-between space-x-10">
+        <div class="inline-block xl:max-w-[453px] space-y-20">
           <h1 class="text-gray-light text-5xl">Ajudando você e sua empresa a dar um próximo passo</h1>
           <div class="inline-block bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-[28px] p-1 hover:opacity-70">
             <a class="inline-block text-2xl text-blue-light border-4 rounded-[28px] border-white">
@@ -90,7 +90,7 @@
             </a>
           </div>
         </div>
-        <div class="grid grid-cols-2 min-w-[810px] space-x-6">
+        <div class="grid grid-cols-2 xl:min-w-[810px] space-x-6">
           <div class="space-y-8 img-right-shadown">
             <div class="relative group h-[300px]">
               <img src="./img/home/01-img.png"
@@ -125,14 +125,9 @@
   <scroll-container id="quemSomos" class="grid">
     <section class="container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
       <div
-        class="flex items-center justify-between bg-[url('./img/quem_somos/fundo.png')] bg-no-repeat h-[850px] img-big-left-shadown">
-        <div
-          data-te-animation-init
-          data-te-animation-start="onScroll"
-          
-          data-te-animation-reset="true"
-          data-te-animation="[fade-in-right_1s_ease-in-out]"
-         class="max-w-[420px] text-white px-5">
+        class="flex items-center justify-between bg-[url('./img/quem_somos/fundo.png')] bg-no-repeat bg-[length:99%_100%] xl:bg-contain h-[850px] img-big-left-shadown">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-right_1s_ease-in-out]" class="max-w-[420px] text-white px-5">
           <p class="text-2xl">Sobre nós</p>
           <h1 class="text-5xl text-center font-bold mt-16">Quem somos</h1>
           <p class="text-2xl mt-8 text-shadown">A <b>Keep Code</b> nasceu do sonho em empreender, termos nossa própria
@@ -144,12 +139,8 @@
             personalizado
             para você e sua empresa.</p>
         </div>
-        <div class="max-w-[830px] img-big-left-shadown"
-          data-te-animation-init
-          data-te-animation-start="onScroll"
-          
-          data-te-animation-reset="true"
-          data-te-animation="[fade-in-left_1s_ease-in-out]">
+        <div class="max-w-[830px] img-big-left-shadown" data-te-animation-init data-te-animation-start="onScroll"
+          data-te-animation-reset="true" data-te-animation="[fade-in-left_1s_ease-in-out]">
           <img src="./img/quem_somos/01-img.png">
         </div>
       </div>
@@ -160,13 +151,9 @@
       <h1
         class="font-bold text-transparent text-5xl text-right bg-clip-text bg-gradient-to-l from-[#AB1D84] via-[#09F4F9] to-[#09F4F9] leading-tight">
         Serviços que prestamos!</h1>
-      <div class="flex mt-8 justify-between">
-        <div
-          data-te-animation-init
-          data-te-animation-start="onScroll"
-          data-te-animation-reset="true"
-          data-te-animation="[fade-in-down_1s_ease-in-out]"
-          class="h-min w-min">
+      <div class="grid grid-cols-2 xl:grid-cols-4 gap-9 xl:gap-0 mt-8 justify-between">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-down_1s_ease-in-out]" class="h-min w-min ml-auto xl:ml-0">
           <div
             class="flex items-center justify-center bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-lg p-1 shadow-3xl w-[310px]">
             <div
@@ -178,12 +165,8 @@
             </div>
           </div>
         </div>
-        <div 
-          data-te-animation-init
-          data-te-animation-start="onScroll"
-          data-te-animation-reset="true"
-          data-te-animation="[fade-in-up_1s_ease-in-out]"
-          class="h-min w-min">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-up_1s_ease-in-out]" class="h-min w-min mr-auto xl:mr-0">
           <div
             class="flex items-center justify-center bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-lg p-1 mt-[50px] shadow-3xl w-[310px]">
             <div
@@ -195,14 +178,10 @@
             </div>
           </div>
         </div>
-        <div 
-          data-te-animation-init
-          data-te-animation-start="onScroll"          
-          data-te-animation-reset="true"
-          data-te-animation="[fade-in-down_1s_ease-in-out]"
-          class="h-min w-min">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-down_1s_ease-in-out]" class="h-min w-min ml-auto xl:ml-0">
           <div
-            class="flex items-center justify-center bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-lg p-1 mt-[100px] shadow-3xl w-[310px]">
+            class="flex items-center justify-center bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-lg p-1 -mt-[50px] xl:mt-[100px] shadow-3xl w-[310px]">
             <div
               class="flex flex-col justify-between  bg-[url('./img/servicos/sites.png')] bg-cover bg-no-repeat border-[4px] border-white rounded-lg p-3 h-[350px] w-[310px]">
               <p class="text-white text-2xl leading-none">Sites</p>
@@ -212,14 +191,10 @@
             </div>
           </div>
         </div>
-        <div 
-          data-te-animation-init
-          data-te-animation-start="onScroll"          
-          data-te-animation-reset="true"
-          data-te-animation="[fade-in-up_1s_ease-in-out]"
-          class="h-min w-min">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-up_1s_ease-in-out]" class="h-min w-min mr-auto xl:mr-0">
           <div
-            class="flex items-center justify-center bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-lg p-1 mt-[150px] shadow-3xl w-[310px]">
+            class="flex items-center justify-center bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-lg p-1 xl:mt-[150px] shadow-3xl w-[310px]">
             <div
               class="flex flex-col justify-between  bg-[url('./img/servicos/web.png')] bg-cover bg-no-repeat border-[4px] border-white rounded-lg p-3 h-[350px] w-[310px]">
               <p class="text-white text-2xl leading-none">Desenvolvimento web</p>
@@ -235,19 +210,12 @@
   <scroll-container class="grid">
     <section class="container px-4 mx-auto mt-32">
       <h1
-        class="font-bold text-transparent text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8">
+        class="font-bold text-transparent text-5xl text-center xl:text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8 max-w-[636px] xl:max-w-none mx-auto">
         Benefícios da atualização da logomarca e do site</h1>
-      <div      
-        data-te-animation-init
-        data-te-animation-start="onScroll"        
-        data-te-animation-reset="true"
+      <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
         data-te-animation="[fade-in_1s_ease-in-out]"
-        class="bg-[url('./img/beneficios_atualizacao/fundo.png')] bg-contain bg-no-repeat pt-16 pl-16 pr-8 img-big-left-shadown max-w-7xl mx-auto h-[750px]">
-        <div
-          data-te-animation-init
-          data-te-animation-start="onScroll"
-          
-          data-te-animation-reset="true"
+        class="bg-[url('./img/beneficios_atualizacao/fundo.png')] bg-contain bg-no-repeat pt-12 xl:pt-16 pl-3 xl:pl-16 pr-6 xl:pr-8 img-big-left-shadown max-w-7xl mx-auto h-[750px]">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
           data-te-animation="[fade-in-down_1s_ease-in-out]"
           class="bg-[url('./img/beneficios_atualizacao/fundo_texto.png')] bg-cover bg-no-repeat w-[426px] h-[394px] py-20 px-5">
           <h1 id="benefitsTitle" class="text-3xl text-blue-light font-bold mb-8 transition delay-150 duration-300">
@@ -256,13 +224,9 @@
           <p id="benefitsText" class="text-white text-2xl transition delay-150 duration-300">Uma nova logomarca pode
             atrair a atenção da mídia e da clientela, trazendo mais visibilidade para a empresa.</p>
         </div>
-        <div class="flex justify-center space-x-6 w-full mt-32">
-          <div
-            data-te-animation-init
-            data-te-animation-start="onScroll"            
-            data-te-animation-reset="true"
-            data-te-animation="[fade-in-down_1s_ease-in-out]"
-            class="relative w-[300px] h-[52px]">
+        <div class="flex justify-center space-x-6 w-full mt-11 xl:mt-32">
+          <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+            data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-[300px] h-[52px]">
             <button id="buttonActiveStep01" type="button"
               class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-100 transition delay-150 duration-300 btn-shadown">
               <p class="text-white text-2xl">Aumento da Atenção</p>
@@ -273,12 +237,8 @@
               <p class="text-blue-light text-2xl">Aumento da Atenção</p>
             </button>
           </div>
-          <div 
-            data-te-animation-init
-            data-te-animation-start="onScroll"            
-            data-te-animation-reset="true"
-            data-te-animation="[fade-in-up_1s_ease-in-out]"
-            class="relative w-[300px] h-[52px]">
+          <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+            data-te-animation="[fade-in-up_1s_ease-in-out]" class="relative w-[300px] h-[52px]">
             <button id="buttonActiveStep02" type="button"
               class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 btn-shadown">
               <p class="text-white text-2xl">Modernização da marca</p>
@@ -289,12 +249,8 @@
               <p class="text-blue-light text-2xl">Modernização da marca</p>
             </button>
           </div>
-          <div 
-            data-te-animation-init
-            data-te-animation-start="onScroll"            
-            data-te-animation-reset="true"
-            data-te-animation="[fade-in-down_1s_ease-in-out]"
-            class="relative w-[300px] h-[52px]">
+          <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+            data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-[300px] h-[52px]">
             <button id="buttonActiveStep03" type="button"
               class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 btn-shadown">
               <p class="text-white text-2xl">Melhora na experiência</p>
@@ -312,15 +268,12 @@
   <scroll-container class="grid">
     <section class="container px-4 mx-auto mt-32">
       <div class="grid grid-cols-2 gap-4">
-        <h1
+        <h1 data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-left_1s_ease-in-out]"
           class="font-bold text-transparent text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight m-auto">
           Tendências atuais em design de logotipos e sites</h1>
-        <div 
-          data-te-animation-init
-          data-te-animation-start="onScroll"          
-          data-te-animation-reset="true"
-          data-te-animation="[tada_1s_ease-in-out]"
-          class="relative group">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[zoom-in_1s_ease-in-out]" class="relative group">
           <img src="./img/tendencias/01-img.png"
             class="max-w-[632px] w-full img-left-shadown transition delay-150 duration-300 group-hover:brightness-2">
           <div
@@ -330,12 +283,8 @@
               alta para as empresas diferenciarem-se de seus concorrentes.</p>
           </div>
         </div>
-        <div 
-          data-te-animation-init
-          data-te-animation-start="onScroll"          
-          data-te-animation-reset="true"
-          data-te-animation="[zoom-in_1s_ease-in-out]"
-          class="relative group ml-auto">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[zoom-in_1s_ease-in-out]" class="relative group ml-auto">
           <img src="./img/tendencias/02-img.png"
             class="max-w-[632px] w-full img-left-shadown group-hover:brightness-2 transition delay-150 duration-300">
           <div
@@ -345,12 +294,8 @@
               do celular, por isso, o design responsivo é uma tendência forte.</p>
           </div>
         </div>
-        <div 
-          data-te-animation-init
-          data-te-animation-start="onScroll"          
-          data-te-animation-reset="true"
-          data-te-animation="[tada_1s_ease-in-out]"
-          class="relative group">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[zoom-in_1s_ease-in-out]" class="relative group">
           <img src="./img/tendencias/03-img.png"
             class="max-w-[632px] w-full img-left-shadown group-hover:brightness-2 transition delay-150 duration-300">
           <div
@@ -371,20 +316,21 @@
       <div class="grid grid-cols-2 gap-4">
         <img src="./img/projetos/mmm.png" class="img-right-shadown mt-auto">
         <div class="grid grid-cols-2 gap-4 items-end pt-14">
-          <div
-            class="relative col-span-2 flex items-center h-[192px] px-10 img-right-shadown">
+          <div class="relative col-span-2 flex items-center h-[148px] xl:h-[192px] px-10 img-right-shadown">
             <img src="./img/projetos/fundo_roxo.png" class="absolute top-0 left-0 h-full w-full">
-            <h1 class="text-white text-5xl font-bold z-10 text-center">O próximo projeto pode ser o seu!</h1>
+            <h1 class="text-white text-4xl xl:text-5xl font-bold z-10 text-center">O próximo projeto pode ser o seu!
+            </h1>
           </div>
           <img src="./img/projetos/pao_de_queijo.png" class="h-full img-right-shadown">
           <img src="./img/projetos/pixel.png" class="h-full img-right-shadown">
         </div>
         <div class="grid grid-cols-2 gap-4">
-          <div class="col-span-2 bg-[#E94832] py-14 flex justify-center items-center rounded-2xl img-right-shadown">
-            <h1 class="text-white text-5xl font-bold z-10 text-center">Solicite um orçamento conosco</h1>
+          <div
+            class="col-span-2 bg-[#E94832] py-11 xl:py-14 flex justify-center items-center rounded-2xl img-right-shadown">
+            <h1 class="text-white text-4xl xl:text-5xl font-bold z-10 text-center">Solicite um orçamento conosco</h1>
           </div>
-          <img src="./img/projetos/cafe_passado.png" class="h-full img-right-shadown">
-          <img src="./img/projetos/owner.png" class="h-full img-right-shadown max-h-[187px]">
+          <img src="./img/projetos/cafe_passado.png" class="xl:h-full img-right-shadown">
+          <img src="./img/projetos/owner.png" class="xl:h-full img-right-shadown max-h-[187px]">
         </div>
         <img src="./img/projetos/sl.png" class="img-right-shadown">
       </div>
@@ -393,7 +339,7 @@
   <scroll-container class="grid">
     <section class="container px-4 mx-auto mt-32">
       <h1
-        class="font-bold text-transparent text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8">
+        class="font-bold text-transparent text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8 max-w-[674px] xl:max-w-none mx-auto xl:mx-0">
         Empresas que atualizaram suas marcas e sites</h1>
       <p class="text-gray-light text-2xl">A marca aérea Alaska Airlines e a empresa de tecnologia Atlassian são dois
         exemplos de sucesso que atualizaram e renovaram suas marcas. As atualizações não se basearam no mero redesenho
@@ -401,7 +347,7 @@
         de uma nova história e personalidade de suas empresas, que por sua vez se refletiram em seus logotipos e sites.
       </p>
       <h1
-        class="font-bold text-transparent text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mt-16 mb-8">
+        class="font-bold text-transparent text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight max-w-[539px] xl:max-w-none mx-auto xl:mx-0 mt-16 mb-8">
         Passos para atualizar sua logomarca e site</h1>
       <ol class="text-gray-light text-2xl leading-normal">
         <li>1. Avalie o momento certo para atualizar a logomarca.</li>
@@ -423,8 +369,9 @@
         <img src="./img/contate_nos/02-img.png" class="w-full img-right-shadown ">
         <img src="./img/contate_nos/03-img.png" class="w-full img-right-shadown ">
         <div
-          class="bg-[url('./img/contate_nos/04-img.png')] bg-no-repeat flex items-center h-[212px] px-3 img-left-shadown">
-          <p class="text-white text-2xl text-center">Projetos <b>personalizados</b> com a cara da sua empresa!</p>
+          class="bg-[url('./img/contate_nos/04-img.png')] bg-no-repeat bg-contain flex items-center h-[164px] xl:h-[212px] px-3 img-left-shadown">
+          <p class="text-white text-xl xl:text-2xl xl:text-center">Projetos <b>personalizados</b> com a cara da sua
+            empresa!</p>
         </div>
       </div>
       <div class="grid grid-cols-4 gap-4">
@@ -438,8 +385,9 @@
         </div>
         <img src="./img/contate_nos/05-img.png" class="w-full img-right-shadown">
         <div
-          class="bg-[url('./img/contate_nos/06-img.png')] bg-no-repeat flex items-center h-[212px] px-3 img-left-shadown">
-          <p class="text-white text-2xl text-center">Nós ajudamos você a sair do anonimato <b>crie seu site hoje!</b>
+          class="bg-[url('./img/contate_nos/06-img.png')] bg-no-repeat bg-contain pt-6 xl:h-[212px] px-3 img-left-shadown">
+          <p class="text-white text-xl xl:text-2xl xl:text-center">Nós ajudamos você a sair do anonimato <b>crie seu
+              site hoje!</b>
           </p>
         </div>
         <img src="./img/contate_nos/07-img.png" class="w-full img-right-shadown">
@@ -449,59 +397,130 @@
   <scroll-container id="clientes" class="grid">
     <section class="container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
       <div
-        class="bg-[url('./img/clientes/fundo.png')] bg-contain bg-no-repeat h-[800px] img-big-left-shadown py-32 px-6">
-        <h1 class="text-white text-3xl lg:text-6xl lg:text-center">Alguns dos nossos clientes</h1>
+        class="bg-[url('./img/clientes/fundo.png')] bg-contain bg-no-repeat xl:h-[800px] img-big-left-shadown py-16 xl:py-32 px-6">
+        <h1 class="text-white text-5xl lg:text-center">Alguns dos nossos clientes</h1>
         <div
-          class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-max gap-12 lg:gap-5 justify-center mt-12 lg:mt-28">
-          <div class="flex justify-center items-center h-[100px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-            <div
-              class="flex justify-center items-center group cursor-pointer h-[100px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-              <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
-                src="./img/clientes/pao-queijo-tradicao.png">
-              <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
-                src="./img/clientes/pao-queijo-tradicao-color.png">
+          class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-max gap-12 lg:gap-5 justify-center mt-10 xl:mt-12">
+          <div class="hidden xl:flex">
+            <div class="flex justify-center items-center h-[100px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+              <div
+                class="flex justify-center items-center group cursor-pointer h-[100px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                  src="./img/clientes/pao-queijo-tradicao.png">
+                <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                  src="./img/clientes/pao-queijo-tradicao-color.png">
+              </div>
+            </div>
+            <div class="flex justify-center items-center h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+              <div
+                class="flex justify-center items-center group cursor-pointer h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                  src="./img/clientes/re9.png">
+                <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                  src="./img/clientes/re9-color.png">
+              </div>
+            </div>
+            <div class="flex justify-center items-center h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+              <div
+                class="flex justify-center items-center group cursor-pointer h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                  src="./img/clientes/sl_propaganda_&_mensagem.png">
+                <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                  src="./img/clientes/sl_propaganda_&_mensagem-color.png">
+              </div>
+            </div>
+            <div class="flex justify-center items-center h-[150px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+              <div
+                class="flex justify-center items-center group cursor-pointer h-[150px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                  src="./img/clientes/mmm.png">
+                <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                  src="./img/clientes/mmm-color.png">
+              </div>
+            </div>
+            <div class="flex justify-center items-center h-[128px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+              <div
+                class="flex justify-center items-center group cursor-pointer h-[128px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                  src="./img/clientes/cael_santana.png">
+                <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                  src="./img/clientes/cael_santana-color.png">
+              </div>
             </div>
           </div>
-          <div class="flex justify-center items-center h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-            <div
-              class="flex justify-center items-center group cursor-pointer h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-              <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
-                src="./img/clientes/re9.png">
-              <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
-                src="./img/clientes/re9-color.png">
+
+          <div id="carouselExampleSlidesOnly" class="block xl:hidden relative col-span-4" data-te-carousel-init data-te-ride="carousel">
+            <!--Carousel items-->
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+              <!--First item-->
+              <div
+                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item data-te-carousel-active>
+                <div class="flex items-center justify-center">
+                  <div class="flex justify-center items-center h-[100px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[100px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                        src="./img/clientes/pao-queijo-tradicao.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                        src="./img/clientes/pao-queijo-tradicao-color.png">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                        src="./img/clientes/re9.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                        src="./img/clientes/re9-color.png">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                        src="./img/clientes/sl_propaganda_&_mensagem.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                        src="./img/clientes/sl_propaganda_&_mensagem-color.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Second item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <div class="flex items-center justify-center">
+                  <div class="flex justify-center items-center h-[150px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[150px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                        src="./img/clientes/mmm.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                        src="./img/clientes/mmm-color.png">
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center h-[128px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[128px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
+                        src="./img/clientes/cael_santana.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
+                        src="./img/clientes/cael_santana-color.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex justify-center items-center h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-            <div
-              class="flex justify-center items-center group cursor-pointer h-[90px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-              <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
-                src="./img/clientes/sl_propaganda_&_mensagem.png">
-              <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
-                src="./img/clientes/sl_propaganda_&_mensagem-color.png">
-            </div>
-          </div>
-          <div class="flex justify-center items-center h-[150px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-            <div
-              class="flex justify-center items-center group cursor-pointer h-[150px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-              <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
-                src="./img/clientes/mmm.png">
-              <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
-                src="./img/clientes/mmm-color.png">
-            </div>
-          </div>
-          <div class="flex justify-center items-center h-[128px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-            <div
-              class="flex justify-center items-center group cursor-pointer h-[128px] lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-              <img class="absolute group-hover:opacity-0 transition delay-150 duration-300"
-                src="./img/clientes/cael_santana.png">
-              <img class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300"
-                src="./img/clientes/cael_santana-color.png">
-            </div>
-          </div>
+
         </div>
-        <p class="text-2xl lg:text-3xl text-center text-white mt-24 lg:mt-28">Acreditamos no valor das parcerias que
-          duram,
-          por isso somos gratos em ter vocês com a gente!</p>
+        <p class="text-2xl lg:text-3xl text-center text-white max-w-[622px] xl:max-w-none mx-auto xl:mx-0 mt-24 xl:mt-28">Acreditamos no valor das parcerias que duram, por isso somos gratos em ter vocês com a gente!</p>
       </div>
     </section>
   </scroll-container>
@@ -529,83 +548,86 @@
   </scroll-container>
   <scroll-container class="grid">
     <section class="container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
-      <div class="bg-[url('./img/depoimentos/fundo.png')] bg-no-repeat bg-contain pt-28 px-8 img-big-right-shadown">
-        <div class="max-w-4xl">
+      <div class="bg-[url('./img/depoimentos/fundo-1024.png')] xl:bg-[url('./img/depoimentos/fundo.png')] bg-no-repeat bg-contain pt-16 xl:pt-28 px-8 img-big-right-shadown">
+        <div class="max-w-[600px] xl:max-w-4xl">
           <h1
             class="font-bold text-transparent text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight">
             O que nossos clientes estão dizendo</h1>
-            <div id="carouselExampleCaptions" class="relative w-full mt-12 lg:mt-16 max-w-[600px] mx-auto" data-te-carousel-init data-te-ride="carousel">
-              <!--Carousel indicators-->
-              <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] flex list-none justify-center p-0"
-                data-te-carousel-indicators>
-                <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0" data-te-carousel-active
-                  class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
-                  class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
-                  class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                  aria-label="Slide 3"></button>
+          <div id="carouselExampleCaptions" class="relative w-full mt-12 xl:mt-16 max-w-[600px] mx-auto"
+            data-te-carousel-init data-te-ride="carousel">
+            <!--Carousel indicators-->
+            <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] flex list-none justify-center p-0"
+              data-te-carousel-indicators>
+              <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0"
+                data-te-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"></button>
+              <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <!--Carousel items-->
+            <div class="relative overflow-hidden rounded-lg h-[594px] shadow-3xl bg-gray-dark">
+              <!--First item-->
+              <div
+                class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  p-3 lg:p-6 text-white bg-gray-dark h-full"
+                data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+                <img src="./img/icons/aspas.png">
+                <h1 class="text-xl lg:text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
+                  desenvolver algo que traga valor para minha empresa!</h1>
+                <p class="text-base lg:text-2xl mt-12">Eu achei lindo! Reflete exatamente o que eu queria passar aos que
+                  forem
+                  buscar pela minha marca.</p>
+                <div
+                  class="absolute left-0 lg:left-6 bottom-6 flex flex-col lg:flex-row lg:items-center w-full lg:w-auto mt-12">
+                  <img src="./img/clientes/mariana-marin-monteiro.png"
+                    class="w-16 h-16 rounded-full mx-auto mb-6 lg:mb-0">
+                  <div class="ml-6">
+                    <p class="text-lg lg:text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
+                    <p class="text-base leading-none">Cirurgiã-destista</p>
+                  </div>
+                </div>
               </div>
-            
-              <!--Carousel items-->
-              <div class="relative overflow-hidden rounded-lg h-[594px] shadow-3xl bg-gray-dark">
-                <!--First item-->
+              <!--Second item -->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark h-full"
+                data-te-carousel-fade data-te-carousel-item>
+                <img src="./img/icons/aspas.png">
+                <h1 class="text-xl lg:text-3xl font-bold mt-12">Extremamente profisisonal</h1>
+                <p class="text-base lg:text-2xl mt-12">Superou minhas expectativas, um trabalho assertivo, rápido e com
+                  valor
+                  justo!</p>
                 <div
-                  class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  p-3 lg:p-6 text-white bg-gray-dark h-full"
-                  data-te-carousel-fade
-                  data-te-carousel-item
-                  data-te-carousel-active>
-                  <img src="./img/icons/aspas.png">
-                  <h1 class="text-xl lg:text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
-                    desenvolver algo que traga valor para minha empresa!</h1>
-                  <p class="text-base lg:text-2xl mt-12">Eu achei lindo! Reflete exatamente o que eu queria passar aos que
-                    forem
-                    buscar pela minha marca.</p>
-                  <div class="absolute left-0 lg:left-6 bottom-6 flex flex-col lg:flex-row lg:items-center w-full lg:w-auto mt-12">
-                    <img src="./img/clientes/mariana-marin-monteiro.png" class="w-16 h-16 rounded-full mx-auto mb-6 lg:mb-0">
-                    <div class="ml-6">
-                      <p class="text-lg lg:text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
-                      <p class="text-base leading-none">Cirurgiã-destista</p>
-                    </div>
+                  class="absolute left-0 lg:left-6 bottom-6 flex flex-col lg:flex-row lg:items-center w-full lg:w-auto mt-12">
+                  <img src="./img/clientes/emerson-quaresma.png" class="w-16 h-16 rounded-full mx-auto mb-6 lg:mb-0">
+                  <div class="ml-6">
+                    <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
+                    <p class="text-base leading-none">Empresário</p>
                   </div>
                 </div>
-                <!--Second item -->
+              </div>
+              <!--Third item -->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  p-3 lg:p-6 text-white bg-gray-dark h-full"
+                data-te-carousel-fade data-te-carousel-item>
+                <img src="./img/icons/aspas.png">
+                <h1 class="text-xl lg:text-3xl font-bold mt-12">Profissionalismo puro</h1>
+                <p class="text-base lg:text-2xl mt-12">Excelente</p>
                 <div
-                  class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark h-full"
-                  data-te-carousel-fade
-                  data-te-carousel-item>
-                  <img src="./img/icons/aspas.png">
-                  <h1 class="text-xl lg:text-3xl font-bold mt-12">Extremamente profisisonal</h1>
-                  <p class="text-base lg:text-2xl mt-12">Superou minhas expectativas, um trabalho assertivo, rápido e com valor
-                    justo!</p>
-                  <div class="absolute left-0 lg:left-6 bottom-6 flex flex-col lg:flex-row lg:items-center w-full lg:w-auto mt-12">
-                    <img src="./img/clientes/emerson-quaresma.png" class="w-16 h-16 rounded-full mx-auto mb-6 lg:mb-0">
-                    <div class="ml-6">
-                      <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
-                      <p class="text-base leading-none">Empresário</p>
-                    </div>
-                  </div>
-                </div>
-                <!--Third item -->
-                <div
-                  class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  p-3 lg:p-6 text-white bg-gray-dark h-full"
-                  data-te-carousel-fade
-                  data-te-carousel-item>
-                  <img src="./img/icons/aspas.png">
-                  <h1 class="text-xl lg:text-3xl font-bold mt-12">Profissionalismo puro</h1>
-                  <p class="text-base lg:text-2xl mt-12">Excelente</p>
-                  <div class="absolute left-0 lg:left-6 bottom-6 flex flex-col lg:flex-row lg:items-center w-full lg:w-auto mt-12">
-                    <img src="./img/clientes/leonardo.png" class="w-16 h-16 rounded-full mx-auto mb-6 lg:mb-0">
-                    <div class="ml-6">
-                      <p class="text-2xl font-bold leading-none">Leonardo</p>
-                      <p class="text-base leading-none">Empresário</p>
-                    </div>
+                  class="absolute left-0 lg:left-6 bottom-6 flex flex-col lg:flex-row lg:items-center w-full lg:w-auto mt-12">
+                  <img src="./img/clientes/leonardo.png" class="w-16 h-16 rounded-full mx-auto mb-6 lg:mb-0">
+                  <div class="ml-6">
+                    <p class="text-2xl font-bold leading-none">Leonardo</p>
+                    <p class="text-base leading-none">Empresário</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
@@ -616,7 +638,7 @@
         class="font-bold text-transparent text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-50% to-[#09F4F9] to-100% leading-tight">
         Vamos tomar um café?</h1>
       <div
-        class="bg-[url('./img/contate_nos/fundo-form.png')] bg-no-repeat bg-contain bg-right-top pt-20 pb-16 pr-28 img-big-right-shadown">
+        class="bg-[url('./img/contate_nos/fundo-form-1024.png')] xl:bg-[url('./img/contate_nos/fundo-form.png')] bg-no-repeat bg-contain bg-right-top pt-20 pb-16 pr-6 xl:pr-28 img-big-right-shadown">
         <div class="grid grid-cols-2 gap-4">
           <div class="grid grid-cols-2 gap-4">
             <div class="col-span-2 grid grid-cols-2 gap-4 items-end img-left-shadown">
@@ -625,12 +647,11 @@
             </div>
             <img src="./img/contate_nos/10-img.png" class="img-left-shadown">
             <div
-              class="bg-[url('./img/contate_nos/11-img.png')] bg-no-repeat bg-contain flex items-center h-[192px] px-3 img-left-shadown">
-              <p class="text-white text-2xl text-center">Estamos aguardando seu<b>contato</b>
-              </p>
+              class="bg-[url('./img/contate_nos/11-img.png')] bg-no-repeat bg-contain xl:flex items-center h-[159px] xl:h-[192px] px-6 xl:px-3 pt-4 xl:pt-0 img-left-shadown">
+              <p class="text-white text-2xl text-center">Estamos aguardando seu <b>contato</b></p>
             </div>
           </div>
-          <form id="form" action="https://formsubmit.co/danilolima40@gmail.com" method="POST" class="pl-16">
+          <form id="form" action="https://formsubmit.co/danilolima40@gmail.com" method="POST" class="pl-6 xl:pl-16">
             <input type="hidden" name="_cc" value="cael.tecnologia@gmail.com">
             <input type="hidden" name="_captcha" value="false">
             <div class="grid grid-cols-1 gap-5">
