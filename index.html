@@ -227,7 +227,7 @@
         Benefícios da atualização da logomarca e do site</h1>
       <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
         data-te-animation="[fade-in_1s_ease-in-out]"
-        class="bg-[url('./img/beneficios_atualizacao/fundo-640.png')] md:bg-[url('./img/beneficios_atualizacao/fundo-768.png')] lg:bg-[url('./img/beneficios_atualizacao/fundo.png')] bg-[length:100%_100%] lg:bg-contain bg-no-repeat rounded-2xl pt-12 xl:pt-16 pl-3 xl:pl-16 pr-3 md:pr-6 xl:pr-8 img-big-left-shadown max-w-7xl mx-auto h-[750px]">
+        class="bg-[url('./img/beneficios_atualizacao/fundo-640.png')] md:bg-[url('./img/beneficios_atualizacao/fundo-768.png')] lg:bg-[url('./img/beneficios_atualizacao/fundo.png')] bg-[length:100%_100%] lg:bg-contain bg-no-repeat rounded-2xl pt-12 xl:pt-16 pl-3 xl:pl-16 pr-3 xl:pr-8 img-big-left-shadown max-w-7xl mx-auto h-[750px]">
         <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
           data-te-animation="[fade-in-down_1s_ease-in-out]"
           class="bg-[url('./img/beneficios_atualizacao/fundo_texto.png')] bg-contain bg-no-repeat w-[410px] lg:w-[426px] h-[370px] lg:h-[394px] py-20 px-5">
@@ -236,33 +236,37 @@
             atrair a atenção da mídia e da clientela, trazendo mais visibilidade para a empresa.</p>
         </div>
         <div class="grid grid-cols-2 gap-6 lg:gap-0 lg:flex justify-center space-x-6 w-full mt-28 lg:mt-11 xl:mt-32">
-          <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
-            data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] !m-0 md:mx-auto lg:mx-0">
-            <button id="buttonActiveStep01" type="button"
-              class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-100 transition delay-150 duration-300 btn-shadown">
-              <p class="text-white text-2xl">Aumento da Atenção</p>
-            </button>
-            <button id="buttonStep01" type="button"
-              class="absolute bg-[url('./img/utils/botao.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 hover:scale-110"
-              onclick="alterValues('Step01')">
-              <p class="text-blue-light text-2xl">Aumento da Atenção</p>
-            </button>
+          <div class="col-span-1">
+            <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+              data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] !m-0 md:mx-auto lg:mx-0">
+              <button id="buttonActiveStep01" type="button"
+                class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-100 transition delay-150 duration-300 btn-shadown">
+                <p class="text-white text-2xl">Aumento da Atenção</p>
+              </button>
+              <button id="buttonStep01" type="button"
+                class="absolute bg-[url('./img/utils/botao.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 hover:scale-110"
+                onclick="alterValues('Step01')">
+                <p class="text-blue-light text-2xl">Aumento da Atenção</p>
+              </button>
+            </div>
           </div>
-          <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
-            data-te-animation="[fade-in-up_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] !m-0 md:mx-auto lg:mx-0">
-            <button id="buttonActiveStep02" type="button"
-              class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 btn-shadown">
-              <p class="text-white text-2xl">Modernização da marca</p>
-            </button>
-            <button id="buttonStep02" type="button"
-              class="absolute bg-[url('./img/utils/botao.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-100 transition delay-150 duration-300 hover:scale-110"
-              onclick="alterValues('Step02')">
-              <p class="text-blue-light text-2xl">Modernização da marca</p>
-            </button>
+          <div class="col-span-1">
+            <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+              data-te-animation="[fade-in-up_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] !m-0 md:mx-auto lg:mx-0">
+              <button id="buttonActiveStep02" type="button"
+                class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 btn-shadown">
+                <p class="text-white text-2xl">Modernização da marca</p>
+              </button>
+              <button id="buttonStep02" type="button"
+                class="absolute bg-[url('./img/utils/botao.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-100 transition delay-150 duration-300 hover:scale-110"
+                onclick="alterValues('Step02')">
+                <p class="text-blue-light text-2xl">Modernização da marca</p>
+              </button>
+            </div>
           </div>
           <div class="col-span-2">
             <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
-              data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] !m-0 md:mx-auto lg:mx-0">
+              data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] m-0 md:mx-auto lg:mx-0">
               <button id="buttonActiveStep03" type="button"
                 class="absolute bg-[url('./img/utils/botao_ativo.png')] bg-contain bg-center bg-no-repeat flex justify-center items-center w-full h-[52px] opacity-0 transition delay-150 duration-300 btn-shadown">
                 <p class="text-white text-2xl">Melhora na experiência</p>
@@ -322,7 +326,7 @@
     </section>
   </scroll-container>
   <scroll-container id="projetosRecentes" class="grid">
-    <section class="md:container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
+    <section class="md:max-w-7xl md:container px-4 2xl:px-0 mx-auto mt-32">
       <h1
         class="font-bold text-transparent text-4xl lg:text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8">
         Projetos Recentes</h1>
@@ -373,16 +377,16 @@
     </section>
   </scroll-container>
   <scroll-container class="grid">
-    <section class="md:container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
+    <section class="md:container px-4 2xl:px-0 md:max-w-7xl mx-auto mt-32">
       <h1
         class="font-bold text-transparent text-4xl lg:text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8">
         Tem algum projeto em mente?</h1>
       <div class="grid grid-cols-3 md:grid-cols-4 gap-4 mb-4 items-end">
-        <img src="./img/contate_nos/01-img.png" class="w-full img-right-shadown hidden md:block">
+        <img src="./img/contate_nos/01-img.png" class="w-full img-right-shadown">
         <img src="./img/contate_nos/02-img.png" class="w-full img-right-shadown">
         <img src="./img/contate_nos/03-img.png" class="w-full img-right-shadown">
         <div
-          class="bg-[url('./img/contate_nos/04-img.png')] bg-no-repeat bg-[length:100%_100%] lg:bg-contain flex items-center h-[110%] lg:h-[164px] xl:h-[212px] w-full px-1 lg:px-3 img-left-shadown">
+          class="bg-[url('./img/contate_nos/04-img.png')] bg-no-repeat bg-[length:100%_100%] lg:bg-contain hidden md:flex items-center h-[110%] lg:h-[164px] xl:h-[212px] w-full px-1 lg:px-3 img-left-shadown">
           <p class="text-white text-base lg:text-xl xl:text-2xl">Projetos <b>personalizados</b> com a cara da sua
             empresa!</p>
         </div>
@@ -396,9 +400,9 @@
             </a>
           </div>
         </div>
-        <img src="./img/contate_nos/05-img.png" class="w-full img-right-shadown hidden md:block">
+        <img src="./img/contate_nos/05-img.png" class="w-full h-[90%] md:h-auto img-right-shadown">
         <div
-          class="bg-[url('./img/contate_nos/06-img.png')] bg-no-repeat bg-contain pt-4 lg:pt-6 xl:pt-11 px-3 xl:px-12 xl:h-[212px] img-left-shadown">
+          class="hidden md:block bg-[url('./img/contate_nos/06-img.png')] bg-no-repeat bg-contain pt-4 lg:pt-6 xl:pt-8 px-3 xl:px-11 xl:h-[212px] img-left-shadown">
           <p class="text-white text-base lg:text-xl xl:text-2xl">Nós ajudamos você a sair do anonimato <b>crie seu
               site hoje!</b>
           </p>
@@ -408,9 +412,9 @@
     </section>
   </scroll-container>
   <scroll-container id="clientes" class="grid">
-    <section class="md:container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
+    <section class="md:container px-4 2xl:px-0 md:max-w-7xl mx-auto mt-32">
       <div
-        class="bg-[url('./img/clientes/fundo.png')] bg-contain bg-no-repeat xl:h-[800px] img-big-left-shadown py-10 md:py-16 xl:py-32 px-6">
+        class="bg-[url('./img/clientes/fundo.png')] bg-[length:100%_100%] bg-no-repeat xl:h-[800px] img-big-left-shadown py-10 md:py-16 xl:py-32">
         <h1 class="text-white text-4xl lg:text-5xl text-center">Alguns dos nossos clientes</h1>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-max gap-12 lg:gap-5 justify-center mt-10 xl:mt-12">
