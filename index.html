@@ -58,7 +58,7 @@
 
       <!-- Mobile Menu Button (hamburger icon) -->
       <button id="mobileMenuButton" class="md:hidden focus:outline-none">
-        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <svg class="text-blue-dark w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
@@ -91,7 +91,7 @@
             </a>
           </div>
         </div>
-        <div class="grid grid-cols-2 xl:min-w-[810px] space-x-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:min-w-[810px] space-x-6">
           <div class="space-y-8 img-right-shadown">
             <div class="relative group h-[300px]">
               <img src="./img/home/01-img.png"
@@ -124,13 +124,13 @@
     </section>
   </scroll-container>
   <scroll-container id="quemSomos" class="grid">
-    <section class="container px-4 2xl:px-0 max-w-5xl lg:max-w-7xl mx-auto mt-32">
+    <section class="container sm:px-4 2xl:px-0 max-w-5xl lg:max-w-7xl mx-auto mt-32">
       <div
-        class="flex items-center justify-between bg-[url('./img/quem_somos/fundo.png')] bg-no-repeat bg-[length:100%_100%] lg:bg-[length:99%_100%] xl:bg-contain h-[768px] lg:h-[850px] img-big-left-shadown">
-        <div class="container lg:max-w-none mx-auto lg:mx-0 px-4 lg:px-0 grid lg:flex grid-cols-1 lg:grid-cols-none">
+        class="flex relative items-center justify-between bg-[url('./img/quem_somos/fundo-320.png')] sm:bg-[url('./img/quem_somos/fundo.png')] bg-no-repeat bg-bottom bg-[length:100%_auto] sm:bg-[length:100%_100%] lg:bg-[length:99%_100%] h-[1236px] sm:h-[768px] lg:h-[850px] img-big-left-shadown">
+        <div class="container lg:max-w-none mx-auto lg:mx-0 mt-52 sm:mt-0 px-3 sm:px-4 lg:px-0 grid lg:flex grid-cols-1 lg:grid-cols-none">
           <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
             data-te-animation="[fade-in-right_1s_ease-in-out]"
-            class="order-2 lg:order-1 lg:max-w-[420px] text-white px-5">
+            class="order-2 lg:order-1 lg:max-w-[420px] text-white sm:px-5">
             <div class="hidden lg:block">
               <p class="text-2xl">Sobre nós</p>
               <h1 class="text-5xl text-center font-bold mt-16">Quem somos</h1>
@@ -145,14 +145,14 @@
               personalizado
               para você e sua empresa.</p>
           </div>
-          <div class="order-1 lg:order-2 lg:max-w-[830px] my-auto img-big-left-shadown" data-te-animation-init data-te-animation-start="onScroll"
+          <div class="absolute sm:relative top-0 order-1 lg:order-2 lg:max-w-[830px] my-auto img-big-left-shadown" data-te-animation-init data-te-animation-start="onScroll"
             data-te-animation-reset="true" data-te-animation="[fade-in-left_1s_ease-in-out]">
-            <div class="grid grid-cols-2 lg:grid-cols-none">
-              <div class="block lg:hidden text-white px-5">
+            <div class="grid rid-cols-1 sm:grid-cols-2 lg:grid-cols-none">
+              <div class="order-2 sm:order-1 block lg:hidden text-white sm:px-5">
                 <p class="text-2xl">Sobre nós</p>
-                <h1 class="text-4xl text-left font-bold mt-16">Quem somos</h1>
+                <h1 class="text-4xl text-left font-bold mt-8 sm:mt-16">Quem somos</h1>
               </div>
-              <img src="./img/quem_somos/01-img.png" class="w-full">
+              <img src="./img/quem_somos/01-img.png" class="order-1 sm:order-2 w-full mb-12 sm:mb-0">
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@
     </section>
   </scroll-container>
   <scroll-container id="servicos" class="grid">
-    <section class="container px-4 mx-auto mt-32">
+    <section class="container px-2 sm:px-4 mx-auto mt-32">
       <h1
         class="font-bold text-transparent text-4xl lg:text-5xl text-right bg-clip-text bg-gradient-to-l from-[#AB1D84] via-[#09F4F9] to-[#09F4F9] leading-tight">
         Serviços que prestamos!</h1>
@@ -221,21 +221,21 @@
     </section>
   </scroll-container>
   <scroll-container class="grid">
-    <section class="container px-4 mx-auto mt-32">
+    <section class="container sm:px-4 mx-auto mt-32">
       <h1
-        class="font-bold text-transparent text-4xl lg:text-5xl text-center xl:text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8 max-w-[636px] xl:max-w-none mx-auto">
+        class="font-bold text-transparent text-4xl lg:text-5xl text-center xl:text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8 max-w-[636px] xl:max-w-none mx-auto px-3 sm:px-0">
         Benefícios da atualização da logomarca e do site</h1>
       <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
         data-te-animation="[fade-in_1s_ease-in-out]"
-        class="bg-[url('./img/beneficios_atualizacao/fundo-640.png')] md:bg-[url('./img/beneficios_atualizacao/fundo-768.png')] lg:bg-[url('./img/beneficios_atualizacao/fundo.png')] bg-[length:100%_100%] lg:bg-contain bg-no-repeat rounded-2xl pt-12 xl:pt-16 pl-3 xl:pl-16 pr-3 xl:pr-8 img-big-left-shadown max-w-7xl mx-auto h-[750px]">
+        class="bg-[url('./img/beneficios_atualizacao/fundo-640.png')] md:bg-[url('./img/beneficios_atualizacao/fundo-768.png')] lg:bg-[url('./img/beneficios_atualizacao/fundo.png')] bg-[length:100%_100%] lg:bg-contain bg-no-repeat rounded-2xl pt-12 xl:pt-16 pl-3 xl:pl-16 pr-3 xl:pr-8 pb-20 sm:pb-0 img-big-left-shadown max-w-7xl mx-auto sm:h-[750px]">
         <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
           data-te-animation="[fade-in-down_1s_ease-in-out]"
-          class="bg-[url('./img/beneficios_atualizacao/fundo_texto.png')] bg-contain bg-no-repeat w-[410px] lg:w-[426px] h-[370px] lg:h-[394px] py-20 px-5">
+          class="bg-[url('./img/beneficios_atualizacao/fundo_texto-320.png')] sm:bg-[url('./img/beneficios_atualizacao/fundo_texto.png')] bg-[length:100%_100%] sm:bg-contain bg-no-repeat w-full sm:w-[410px] lg:w-[426px] h-[495px] sm:h-[370px] lg:h-[394px] pt-20 sm:py-20 px-5">
           <h1 id="benefitsTitle" class="text-3xl text-blue-light font-bold mb-8 transition delay-150 duration-300">Aumento da Atenção</h1>
           <p id="benefitsText" class="text-white text-2xl transition delay-150 duration-300">Uma nova logomarca pode
             atrair a atenção da mídia e da clientela, trazendo mais visibilidade para a empresa.</p>
         </div>
-        <div class="grid grid-cols-2 gap-6 lg:gap-0 lg:flex justify-center lg:space-x-6 w-full mt-28 lg:mt-11 xl:mt-32">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-0 lg:flex justify-center lg:space-x-6 w-full mt-8 sm:mt-28 lg:mt-11 xl:mt-32">
           <div class="col-span-1">
             <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
               data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] !m-0 md:mx-auto lg:mx-0">
@@ -264,7 +264,7 @@
               </button>
             </div>
           </div>
-          <div class="col-span-2">
+          <div class="sm:col-span-2">
             <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
               data-te-animation="[fade-in-down_1s_ease-in-out]" class="relative w-full md:w-[300px] h-[52px] m-0 md:mx-auto lg:mx-0">
               <button id="buttonActiveStep03" type="button"
@@ -282,8 +282,8 @@
       </div>
     </section>
   </scroll-container>
-  <scroll-container class="grid">
-    <section class="md:container px-4 mx-auto mt-32">
+  <scroll-container class="hidden sm:grid">
+    <section class="md:container px-2 sm:px-4 mx-auto mt-32">
       <div class="grid grid-cols-2 gap-4">
         <h1 data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
           data-te-animation="[fade-in-left_1s_ease-in-out]"
@@ -326,22 +326,23 @@
     </section>
   </scroll-container>
   <scroll-container id="projetosRecentes" class="grid">
-    <section class="md:max-w-7xl md:container px-4 2xl:px-0 mx-auto mt-32">
+    <section class="md:max-w-7xl md:container px-2 sm:px-4 2xl:px-0 mx-auto mt-16 sm:mt-32">
       <h1
-        class="font-bold text-transparent text-4xl lg:text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8">
+        class="font-bold text-transparent text-4xl lg:text-5xl sm:text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-50% to-[#09F4F9] to-90% leading-tight mb-8">
         Projetos Recentes</h1>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-[10px] sm:gap-4">
         <img src="./img/projetos/mmm.png" class="img-right-shadown mt-auto">
-        <div class="grid grid-cols-2 gap-4 items-end pt-6 lg:pt-14">
-          <div class="relative col-span-2 flex items-center h-[100%] lg:h-[148px] xl:h-[192px] px-6 lg:px-10 pt-2 lg:pt-0 img-right-shadown">
-            <img src="./img/projetos/fundo_roxo.png" class="absolute top-0 left-0 h-full w-full">
+        <div class="order-2 sm:order-none grid grid-cols-2 gap-[10px] sm:gap-4 items-end sm:pt-6 lg:pt-14 -mt-4 sm:mt-0">
+          <div class="relative col-span-2 flex items-center h-[92px] sm:h-[100%] lg:h-[148px] xl:h-[192px] px-6 lg:px-10 pt-2 lg:pt-0 img-right-shadown">
+            <img src="./img/projetos/fundo_roxo.png" class="hidden sm:block absolute top-0 left-0 h-full w-full">
+            <img src="./img/projetos/fundo_roxo-320.png" class="block sm:hidden absolute top-0 left-0 h-full w-full">
             <h1 class="text-white text-2xl lg:text-4xl xl:text-5xl font-bold z-10 text-center">O próximo projeto pode ser o seu!
             </h1>
           </div>
           <img src="./img/projetos/pao_de_queijo.png" class="h-full img-right-shadown">
           <img src="./img/projetos/pixel.png" class="h-full img-right-shadown">
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="order-1 sm:order-none grid grid-cols-2 gap-[10px] sm:gap-4">
           <div
             class="col-span-2 bg-[#E94832] py-7 h-[95px] md:h-auto md:min-h-[120px] lg:py-11 xl:py-14 flex justify-center items-center rounded-2xl img-right-shadown">
             <h1 class="text-white text-2xl lg:text-4xl xl:text-5xl font-bold z-10 text-center">Solicite um orçamento conosco</h1>
@@ -349,12 +350,12 @@
           <img src="./img/projetos/cafe_passado.png" class="xl:h-full img-right-shadown">
           <img src="./img/projetos/owner.png" class="xl:h-full img-right-shadown max-h-[187px]">
         </div>
-        <img src="./img/projetos/sl.png" class="img-right-shadown">
+        <img src="./img/projetos/sl.png" class="order-3 sm:order-none img-right-shadown">
       </div>
     </section>
   </scroll-container>
   <scroll-container class="grid">
-    <section class="container px-4 mx-auto mt-32">
+    <section class="container px-2 sm:px-4 mx-auto mt-16 sm:mt-32">
       <h1
         class="font-bold text-transparent text-4xl lg:text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8 max-w-[674px] xl:max-w-none mx-auto xl:mx-0">
         Empresas que atualizaram suas marcas e sites</h1>
@@ -377,22 +378,22 @@
     </section>
   </scroll-container>
   <scroll-container class="grid">
-    <section class="md:container px-4 2xl:px-0 md:max-w-7xl mx-auto mt-32">
+    <section class="md:container px-4 2xl:px-0 md:max-w-7xl mx-auto mt-16 sm:mt-32">
       <h1
         class="font-bold text-transparent text-4xl lg:text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8">
         Tem algum projeto em mente?</h1>
-      <div class="grid grid-cols-3 lg:grid-cols-4 gap-4 mb-4 items-end">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 mb-2 sm:mb-4 items-end">
         <img src="./img/contate_nos/01-img.png" class="hidden lg:block w-full img-right-shadown">
-        <img src="./img/contate_nos/02-img.png" class="w-full img-right-shadown">
+        <img src="./img/contate_nos/02-img.png" class="hidden sm:block w-full img-right-shadown">
         <img src="./img/contate_nos/03-img.png" class="w-full img-right-shadown">
         <div
-          class="flex items-center bg-[url('./img/contate_nos/04-img.png')] bg-no-repeat bg-contain w-full h-[110%] px-3 pt-2 img-left-shadown">
-          <p class="text-white text-xl xl:text-2xl">Projetos <b>personalizados</b> com a cara da sua
+          class="flex items-center bg-[url('./img/contate_nos/04-img.png')] bg-no-repeat bg-[length:100%_100%] sm:bg-contain w-full h-[110%] px-3 pt-2 img-left-shadown">
+          <p class="text-white text-sm sm:text-xl xl:text-2xl">Projetos <b>personalizados</b> com a cara da sua
             empresa!</p>
         </div>
       </div>
-      <div class="grid grid-cols-3 lg:grid-cols-4 gap-4">
-        <div class="m-auto">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
+        <div class="hidden sm:block m-auto">
           <div class="inline-block bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-[28px] p-1 hover:opacity-70">
             <a class="inline-block text-2xl text-blue-light border-4 rounded-[28px] border-white">
               <span
@@ -402,8 +403,8 @@
         </div>
         <img src="./img/contate_nos/05-img.png" class="hidden lg:block w-full h-[90%] md:h-auto img-right-shadown">
         <div
-          class="bg-[url('./img/contate_nos/06-img.png')] bg-no-repeat bg-contain pt-4 lg:pt-6 xl:pt-8 px-3 xl:px-11 xl:h-[212px] img-left-shadown">
-          <p class="text-white text-xl xl:text-2xl">Nós ajudamos você a sair do anonimato <b>crie seu
+          class="bg-[url('./img/contate_nos/06-img.png')] bg-no-repeat bg-contain pt-3 sm:pt-4 lg:pt-6 xl:pt-8 px-2 sm:px-3 xl:px-11 xl:h-[212px] img-left-shadown">
+          <p class="text-white text-sm sm:text-xl xl:text-2xl">Nós ajudamos você a sair do anonimato <b>crie seu
               site hoje!</b>
           </p>
         </div>
@@ -412,9 +413,9 @@
     </section>
   </scroll-container>
   <scroll-container id="clientes" class="grid">
-    <section class="md:container px-4 2xl:px-0 md:max-w-7xl mx-auto mt-32">
+    <section class="md:container sm:px-4 2xl:px-0 md:max-w-7xl mx-auto mt-32">
       <div
-        class="bg-[url('./img/clientes/fundo.png')] bg-[length:100%_100%] bg-no-repeat xl:h-[800px] img-big-left-shadown py-10 md:py-16 xl:py-32">
+        class="bg-[url('./img/clientes/fundo-320.png')] sm:bg-[url('./img/clientes/fundo.png')] bg-[length:100%_100%] bg-no-repeat xl:h-[800px] img-big-left-shadown py-10 md:py-16 xl:py-32 px-2 sm:px-0">
         <h1 class="text-white text-4xl lg:text-5xl text-center">Alguns dos nossos clientes</h1>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-max gap-12 lg:gap-5 justify-center mt-10 xl:mt-12">
@@ -466,7 +467,7 @@
             </div>
           </div>
 
-          <div id="carouselExampleSlidesOnly" class="block xl:hidden relative col-span-4" data-te-carousel-init
+          <div id="carouselExampleSlidesOnly" class="hidden sm:block xl:hidden relative col-span-4" data-te-carousel-init
             data-te-ride="carousel">
             <!--Carousel items-->
             <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
@@ -537,6 +538,93 @@
             </div>
           </div>
 
+          <div id="carouselExampleSlidesOnly" class="block sm:hidden relative col-span-4" data-te-carousel-init
+            data-te-ride="carousel">
+            <!--Carousel items-->
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+              <!--1 item-->
+              <div
+                class="relative float-left -mr-[100%] w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item data-te-carousel-active>
+                <div class="flex items-center justify-center">
+                  <div class="flex justify-center items-center h-[100px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[100px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
+                        src="./img/clientes/pao-queijo-tradicao.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
+                        src="./img/clientes/pao-queijo-tradicao-color.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--2 item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <div class="flex items-center justify-center">
+                  <div class="flex justify-center items-center h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
+                        src="./img/clientes/re9.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
+                        src="./img/clientes/re9-color.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--3 item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <div class="flex items-center justify-center">
+                  <div class="flex justify-center items-center h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <div
+                      class="flex justify-center items-center group cursor-pointer h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
+                        src="./img/clientes/sl_propaganda_&_mensagem.png">
+                      <img
+                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
+                        src="./img/clientes/sl_propaganda_&_mensagem-color.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--4 item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <div class="flex justify-center items-center h-[150px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60 mx-auto">
+                  <div
+                    class="flex justify-center items-center group cursor-pointer h-[150px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
+                      src="./img/clientes/mmm.png">
+                    <img
+                      class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
+                      src="./img/clientes/mmm-color.png">
+                  </div>
+                </div>
+              </div>
+              <!--5 item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <div class="flex justify-center items-center h-[128px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60 mx-auto">
+                  <div
+                    class="flex justify-center items-center group cursor-pointer h-[128px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
+                    <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
+                      src="./img/clientes/cael_santana.png">
+                    <img
+                      class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
+                      src="./img/clientes/cael_santana-color.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <p
           class="text-2xl lg:text-3xl text-center text-white max-w-[622px] xl:max-w-none mx-auto xl:mx-0 mt-4 md:mt-16 lg:mt-24 xl:mt-28">
@@ -545,7 +633,7 @@
     </section>
   </scroll-container>
   <scroll-container class="grid">
-    <section class="container px-4 mx-auto space-y-16 mt-32">
+    <section class="container px-2 sm:px-4 mx-auto space-y-16 mt-16 sm:mt-32">
       <h1
         class="font-bold text-transparent text-4xl lg:text-5xl text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight mb-8 max-w-[677px] mx-auto 2xl:max-w-full">
         Resultados obtidos após a atualização da marca e site</h1>
@@ -567,14 +655,14 @@
     </section>
   </scroll-container>
   <scroll-container class="grid">
-    <section class="container px-4 2xl:px-0 max-w-7xl mx-auto mt-32">
+    <section class="container sm:px-4 2xl:px-0 max-w-7xl mx-auto mt-16 sm:mt-32">
       <div
-        class="bg-[url('./img/depoimentos/fundo-640.png')] md:bg-[url('./img/depoimentos/fundo-1024.png')] xl:bg-[url('./img/depoimentos/fundo.png')] bg-no-repeat bg-[length:100%_auto] md:bg-contain pt-16 xl:pt-28 px-8 img-big-right-shadown">
+        class="bg-[url('./img/depoimentos/fundo-640.png')] md:bg-[url('./img/depoimentos/fundo-1024.png')] xl:bg-[url('./img/depoimentos/fundo.png')] bg-no-repeat bg-[length:100%_auto] md:bg-contain pt-12 sm:pt-16 xl:pt-28 px-2 sm:px-8 img-big-right-shadown">
         <div class="md:max-w-[65%] lg:max-w-[600px] xl:max-w-4xl">
           <h1
-            class="max-w-[310px] md:max-w-none font-bold text-transparent text-4xl lg:text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight">
+            class="max-w-[155px] sm:max-w-[310px] md:max-w-none font-bold text-transparent text-4xl lg:text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight">
             O que nossos clientes estão dizendo</h1>
-          <div id="carouselExampleCaptions" class="relative w-full mt-12 xl:mt-16 max-w-[600px] mx-auto"
+          <div id="carouselExampleCaptions" class="relative w-full mt-16 sm:mt-12 xl:mt-16 sm:max-w-[600px] mx-auto"
             data-te-carousel-init data-te-ride="carousel">
             <!--Carousel indicators-->
             <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] flex list-none justify-center p-0"
@@ -592,10 +680,10 @@
             </div>
 
             <!--Carousel items-->
-            <div class="relative overflow-hidden rounded-lg h-[580px] lg:h-[594px] shadow-3xl">
+            <div class="relative overflow-hidden rounded-lg h-[700px] sm:h-[580px] lg:h-[594px] shadow-3xl">
               <!--First item-->
               <div
-                class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
+                class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
                 data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
                 <img src="./img/icons/aspas.png">
                 <h1 class="text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
@@ -604,10 +692,10 @@
                   forem
                   buscar pela minha marca.</p>
                 <div
-                  class="absolute left-6 bottom-10 lg:bottom-6 flex flex-row items-center w-auto mt-12">
+                  class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
                   <img src="./img/clientes/mariana-marin-monteiro.png"
                     class="w-16 h-16 rounded-full mx-auto">
-                  <div class="ml-6">
+                  <div class="ml-2 sm:ml-6">
                     <p class="text-lg lg:text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
                     <p class="text-base leading-none">Cirurgiã-destista</p>
                   </div>
@@ -623,9 +711,9 @@
                   valor
                   justo!</p>
                 <div
-                  class="absolute left-6 bottom-10 lg:bottom-6 flex flex-row items-center w-auto mt-12">
+                  class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
                   <img src="./img/clientes/emerson-quaresma.png" class="w-16 h-16 rounded-full mx-auto">
-                  <div class="ml-6">
+                  <div class="ml-2 sm:ml-6">
                     <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
                     <p class="text-base leading-none">Empresário</p>
                   </div>
@@ -633,15 +721,15 @@
               </div>
               <!--Third item -->
               <div
-                class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
+                class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
                 data-te-carousel-fade data-te-carousel-item>
                 <img src="./img/icons/aspas.png">
                 <h1 class="text-3xl font-bold mt-12">Profissionalismo puro</h1>
                 <p class="text-base lg:text-2xl mt-12">Excelente</p>
                 <div
-                  class="absolute left-6 bottom-10 lg:bottom-6 flex flex-row items-center w-auto mt-12">
+                  class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
                   <img src="./img/clientes/leonardo.png" class="w-16 h-16 rounded-full mx-auto">
-                  <div class="ml-6">
+                  <div class="ml-2 sm:ml-6">
                     <p class="text-2xl font-bold leading-none">Leonardo</p>
                     <p class="text-base leading-none">Empresário</p>
                   </div>
@@ -654,12 +742,12 @@
     </section>
   </scroll-container>
   <scroll-container id="orcamento" class="grid">
-    <section class="container px-4 2xl:px-0 max-w-7xl mx-auto mb-16 mt-32">
+    <section class="container sm:px-4 2xl:px-0 max-w-7xl mx-auto mb-16 mt-16 sm:mt-32">
       <h1
-        class="font-bold text-transparent text-4xl lg:text-5xl text-right lg:text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-9% via-[#09F4F9] 10% to-[#09F4F9] to-100% leading-tight">
+        class="font-bold text-transparent text-4xl lg:text-5xl text-right lg:text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-9% via-[#09F4F9] 10% to-[#09F4F9] to-100% leading-tight px-2 sm:px-0 ml-auto sm:ml-0 max-w-[267px] sm:max-w-none">
         Vamos tomar um café?</h1>
       <div
-        class="bg-[url('./img/contate_nos/fundo-form-1024.png')] xl:bg-[url('./img/contate_nos/fundo-form.png')] bg-no-repeat bg-[length:100%_931px] lg:bg-contain bg-bottom lg:bg-right-top pt-20 pb-16 pr-6 xl:pr-28 img-big-right-shadown">
+        class="bg-[url('./img/contate_nos/fundo-form-320.png')] sm:bg-[url('./img/contate_nos/fundo-form-1024.png')] xl:bg-[url('./img/contate_nos/fundo-form.png')] bg-no-repeat bg-[length:100%_931px] lg:bg-contain bg-bottom lg:bg-right-top pt-20 pb-20 sm:pb-16 pl-2 sm:pl-0 pr-2 sm:pr-6 xl:pr-28 img-big-right-shadown">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="grid grid-cols-2 gap-4 max-w-[496px] lg:max-w-none mx-auto">
             <div class="col-span-2 grid grid-cols-2 gap-4 items-end img-left-shadown">
@@ -668,11 +756,11 @@
             </div>
             <img src="./img/contate_nos/10-img.png" class="img-left-shadown">
             <div
-              class="bg-[url('./img/contate_nos/11-img.png')] bg-no-repeat bg-contain xl:flex items-center h-[159px] xl:h-[192px] px-6 xl:px-3 pt-4 xl:pt-0 xl:pb-5 img-left-shadown">
-              <p class="text-white text-2xl text-center xl:text-left">Estamos aguardando seu <b>contato</b></p>
+              class="bg-[url('./img/contate_nos/11-img.png')] bg-no-repeat bg-contain xl:flex items-center sm:h-[159px] xl:h-[192px] px-2 sm:px-6 xl:px-3 pt-6 sm:pt-4 xl:pt-0 xl:pb-5 img-left-shadown">
+              <p class="text-white text-sm sm:text-2xl text-center xl:text-left">Estamos aguardando seu <b>contato</b></p>
             </div>
           </div>
-          <form id="form" action="https://formsubmit.co/danilolima40@gmail.com" method="POST" class="pl-6 xl:pl-16 max-w-[600px] w-full lg:max-w-none mx-auto lg:mx-0">
+          <form id="form" action="https://formsubmit.co/danilolima40@gmail.com" method="POST" class="sm:pl-6 xl:pl-16 max-w-[600px] w-full lg:max-w-none mx-auto lg:mx-0 mt-8 sm:mt-0">
             <input type="hidden" name="_cc" value="cael.tecnologia@gmail.com">
             <input type="hidden" name="_captcha" value="false">
             <div class="grid grid-cols-1 gap-5">
