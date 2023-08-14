@@ -37,3 +37,84 @@ phoneInput.addEventListener('input', function (e) {
 });
 
 // MASCARA PARA TELEFONE
+
+
+const mobileMenuButton = document.querySelector('#mobileMenuButton');
+const mobileMenu = document.querySelector('#mobileMenu');
+
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+function alterValues(value) {
+  let benefitsTitle = document.getElementById('benefitsTitle');
+  let benefitsText = document.getElementById('benefitsText');
+  let buttonActive = document.getElementById('buttonActive' + value);
+  let button = document.getElementById('button' + value);
+  if(value == 'Step01') {
+    let buttonActiveStep02 = document.getElementById('buttonActiveStep02');
+    let buttonStep02 = document.getElementById('buttonStep02');
+    let buttonActiveStep03 = document.getElementById('buttonActiveStep03');
+    let buttonStep03 = document.getElementById('buttonStep03');
+
+    benefitsTitle.innerHTML = 'Aumento da Atenção';
+    benefitsText.innerHTML = 'Uma nova logomarca pode atrair a atenção da mídia e da clientela, trazendo mais visibilidade para a empresa.';
+    buttonActive.classList.remove('opacity-0');
+    buttonActive.classList.add('opacity-100');
+    button.classList.add('opacity-0');
+    button.classList.remove('opacity-100');
+    
+    buttonActiveStep03.classList.add('opacity-0');
+    buttonActiveStep02.classList.add('opacity-0');
+    buttonActiveStep03.classList.remove('opacity-100');
+    buttonActiveStep02.classList.remove('opacity-100');
+    buttonStep03.classList.remove('opacity-0');
+    buttonStep02.classList.remove('opacity-0');
+    buttonStep03.classList.add('opacity-100');
+    buttonStep02.classList.add('opacity-100');
+  }
+  else if(value == 'Step02') {
+    let buttonActiveStep01 = document.getElementById('buttonActiveStep01');
+    let buttonStep01 = document.getElementById('buttonStep01');
+    let buttonActiveStep03 = document.getElementById('buttonActiveStep03');
+    let buttonStep03 = document.getElementById('buttonStep03');
+
+    benefitsTitle.innerHTML = 'Modernização da marca';
+    benefitsText.innerHTML = 'Atualizar a logomarca e o site da empresa pode ajudar a modernizar sua imagem e dar-lhes uma aparência nova e fresca.';
+    buttonActive.classList.remove('opacity-0');
+    buttonActive.classList.add('opacity-100');
+    button.classList.add('opacity-0');
+    button.classList.remove('opacity-100');
+    
+    buttonActiveStep01.classList.add('opacity-0');
+    buttonActiveStep03.classList.add('opacity-0');
+    buttonActiveStep01.classList.remove('opacity-100');
+    buttonActiveStep03.classList.remove('opacity-100');
+    buttonStep01.classList.remove('opacity-0');
+    buttonStep03.classList.remove('opacity-0');
+    buttonStep01.classList.add('opacity-100');
+    buttonStep03.classList.add('opacity-100');
+  }
+  else if(value == 'Step03') {
+    let buttonActiveStep01 = document.getElementById('buttonActiveStep01');
+    let buttonStep01 = document.getElementById('buttonStep01');
+    let buttonActiveStep02 = document.getElementById('buttonActiveStep02');
+    let buttonStep02 = document.getElementById('buttonStep02');
+
+    benefitsTitle.innerHTML = 'Melhora na experiência';
+    benefitsText.innerHTML = 'Uma atualização cuidadosa pode melhorar a forma como os clientes interagem com a marca e seus serviços online.';
+    buttonActive.classList.remove('opacity-0');
+    buttonActive.classList.add('opacity-100');
+    button.classList.add('opacity-0');
+    button.classList.remove('opacity-100');
+    
+    buttonActiveStep01.classList.add('opacity-0');
+    buttonActiveStep02.classList.add('opacity-0');
+    buttonActiveStep01.classList.remove('opacity-100');
+    buttonActiveStep02.classList.remove('opacity-100');
+    buttonStep01.classList.remove('opacity-0');
+    buttonStep02.classList.remove('opacity-0');
+    buttonStep01.classList.add('opacity-100');
+    buttonStep02.classList.add('opacity-100');
+  }
+}

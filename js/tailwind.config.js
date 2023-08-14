@@ -15,6 +15,12 @@ tailwind.config = {
     },
     boxShadow: {
       '3xl': '4px 4px 10px 2px rgba(0, 0, 0, 0.25)',
+      'text': '0px 0px 14px 0px #FFF;',
+      'img': '-8px 8px 8px rgba(0, 0, 0, 0.24)'
+
+    },
+    brightness: {
+      2: '.2',
     }
   }
 }
