@@ -101,6 +101,6 @@ section.module.parallax h1 {
   filter: drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.24));
 }
 .btn-shadown{
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255));
   border-radius: 26px;
 }
