@@ -27,7 +27,7 @@
   <script type="text/javascript" src="./js/scripts.js" defer></script>
 
   <!-- CARROSSEL -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <title>Keep Code</title>
 </head>
@@ -293,7 +293,7 @@
   <scroll-container id="projetosRecentes" class="grid">
     <section class="container lg:max-w-5xl xl:max-w-7xl px-2 sm:px-3 2xl:px-0 mx-auto mt-32">
       <h1
-        class="font-bold text-transparent text-4xl lg:text-5xl sm:text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-50% to-[#09F4F9] to-90% leading-tight mb-8">
+        class="font-bold text-transparent text-4xl lg:text-5xl sm:text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-50% to-[#09F4F9] to-90% !leading-tight mb-8">
         Projetos Recentes</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-[10px] sm:gap-4">
         <img src="./img/projetos/mmm.png" class="img-right-shadown mt-auto">
@@ -380,204 +380,56 @@
   <scroll-container id="clientes" class="grid">
     <section class="container lg:max-w-5xl xl:max-w-7xl px-2 sm:px-3 2xl:px-0 mx-auto mt-32">
       <div
-        class="bg-[url('./img/clientes/fundo-320.png')] sm:bg-[url('./img/clientes/fundo.png')] bg-[length:100%_100%] bg-no-repeat xl:h-[800px] img-big-left-shadown py-10 md:py-16 xl:py-32 px-2 sm:px-0">
+        class="flex flex-col justify-between bg-[url('./img/clientes/fundo-320.png')] sm:bg-[url('./img/clientes/fundo.png')] bg-[length:100%_100%] bg-no-repeat xl:h-[800px] img-big-left-shadown py-10 md:py-16 xl:py-32 px-2 sm:px-0">
         <h1 class="text-white text-4xl lg:text-5xl text-center">Alguns dos nossos clientes</h1>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-max gap-12 lg:gap-5 justify-center mt-10 lg:mt-24 xl:mt-12">
-          <div class="hidden xl:flex">
-            <div class="group relative h-[250px] w-[250px] m-auto">
-              <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
-                   src="./img/clientes/pao-queijo-tradicao.png">
-              <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
-                   src="./img/clientes/pao-queijo-tradicao-color.png">
-            </div>
-            <div class="group relative h-[250px] w-[250px] m-auto">
-              <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
-                   src="./img/clientes/re9.png">
-              <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
-                   src="./img/clientes/re9-color.png">
-            </div> 
-            <div class="group relative h-[250px] w-[250px] m-auto">
-              <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
-                   src="./img/clientes/sl_propaganda_&_mensagem.png">
-              <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
-                   src="./img/clientes/sl_propaganda_&_mensagem-color.png">
-            </div> 
-            <div class="group relative h-[250px] w-[250px] m-auto">
-              <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
-                   src="./img/clientes/mmm.png">
-              <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
-                   src="./img/clientes/mmm-color.png">
-            </div> 
-            <div class="group relative h-[250px] w-[250px] m-auto">
-              <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
-                   src="./img/clientes/cael_santana.png">
-              <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
-                   src="./img/clientes/cael_santana-color.png">
-            </div> 
-          </div>
-
-          <div id="carouselExampleSlidesOnly" class="hidden sm:block xl:hidden relative col-span-4" data-te-carousel-init
-            data-te-ride="carousel">
-            <!--Carousel items-->
-            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-              <!--First item-->
-              <div
-                class="relative float-left -mr-[100%] w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item data-te-carousel-active>
-                <div class="flex items-center justify-center">
-                  <div class="flex justify-center items-center h-[100px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[100px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/pao-queijo-tradicao.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/pao-queijo-tradicao-color.png">
-                    </div>
-                  </div>
-                  <div class="flex justify-center items-center h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/re9.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/re9-color.png">
-                    </div>
-                  </div>
-                  <div class="flex justify-center items-center h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/sl_propaganda_&_mensagem.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/sl_propaganda_&_mensagem-color.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Second item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item>
-                <div class="flex items-center justify-center">
-                  <div class="flex justify-center items-center h-[150px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[150px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/mmm.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/mmm-color.png">
-                    </div>
-                  </div>
-                  <div class="flex justify-center items-center h-[128px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[128px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/cael_santana.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/cael_santana-color.png">
-                    </div>
-                  </div>
-                </div>
+        <div>
+        <div class="swiper mySwiper px-6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" >
+              <div class="group relative h-[250px] max-w-[250px] m-auto">
+                <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
+                     src="./img/clientes/pao-queijo-tradicao.png">
+                <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
+                     src="./img/clientes/pao-queijo-tradicao-color.png">
               </div>
             </div>
-          </div>
-
-          <div id="carouselExampleSlidesOnly" class="block sm:hidden relative col-span-4" data-te-carousel-init
-            data-te-ride="carousel">
-            <!--Carousel items-->
-            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-              <!--1 item-->
-              <div
-                class="relative float-left -mr-[100%] w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item data-te-carousel-active>
-                <div class="flex items-center justify-center">
-                  <div class="flex justify-center items-center h-[100px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[100px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/pao-queijo-tradicao.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/pao-queijo-tradicao-color.png">
-                    </div>
-                  </div>
-                </div>
+            <div class="swiper-slide" >
+              <div class="group relative h-[250px] max-w-[250px] m-auto">
+                <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
+                     src="./img/clientes/re9.png">
+                <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
+                     src="./img/clientes/re9-color.png">
+              </div> 
+            </div>
+            <div class="swiper-slide" >
+              <div class="group relative h-[250px] max-w-[250px] m-auto">
+                <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
+                     src="./img/clientes/sl_propaganda_&_mensagem.png">
+                <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
+                     src="./img/clientes/sl_propaganda_&_mensagem-color.png">
               </div>
-              <!--2 item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item>
-                <div class="flex items-center justify-center">
-                  <div class="flex justify-center items-center h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/re9.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/re9-color.png">
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="swiper-slide" >
+              <div class="group relative h-[250px] max-w-[250px] m-auto">
+                <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
+                     src="./img/clientes/mmm.png">
+                <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
+                     src="./img/clientes/mmm-color.png">
               </div>
-              <!--3 item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item>
-                <div class="flex items-center justify-center">
-                  <div class="flex justify-center items-center h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <div
-                      class="flex justify-center items-center group cursor-pointer h-[90px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                      <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/sl_propaganda_&_mensagem.png">
-                      <img
-                        class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                        src="./img/clientes/sl_propaganda_&_mensagem-color.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--4 item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item>
-                <div class="flex justify-center items-center h-[150px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60 mx-auto">
-                  <div
-                    class="flex justify-center items-center group cursor-pointer h-[150px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                      src="./img/clientes/mmm.png">
-                    <img
-                      class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                      src="./img/clientes/mmm-color.png">
-                  </div>
-                </div>
-              </div>
-              <!--5 item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full min-h-[150px] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item>
-                <div class="flex justify-center items-center h-[128px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60 mx-auto">
-                  <div
-                    class="flex justify-center items-center group cursor-pointer h-[128px] w-1/2 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60">
-                    <img class="absolute group-hover:opacity-0 transition delay-150 duration-300 max-w-[150px] md:max-w-none"
-                      src="./img/clientes/cael_santana.png">
-                    <img
-                      class="absolute opacity-0 transition ease-in-out delay-150 group-hover:opacity-100 duration-300 max-w-[150px] md:max-w-none"
-                      src="./img/clientes/cael_santana-color.png">
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="swiper-slide" >
+              <div class="group relative h-[250px] max-w-[250px] m-auto">
+                <img class="absolute inset-0 opacity-100 group-hover:opacity-0 transition duration-300 m-auto"
+                     src="./img/clientes/cael_santana.png">
+                <img class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 m-auto"
+                     src="./img/clientes/cael_santana-color.png">
+              </div> 
             </div>
           </div>
         </div>
+        </div>
         <p
-          class="text-2xl lg:text-3xl text-center text-white max-w-[622px] xl:max-w-none mx-auto xl:mx-0 mt-4 md:mt-16 lg:mt-24 xl:mt-32">
+          class="text-2xl lg:text-3xl text-center text-white max-w-[622px] xl:max-w-none mx-auto xl:mx-0 ">
           Acreditamos no valor das parcerias que duram, por isso somos gratos em ter vocês com a gente!</p>
       </div>
     </section>
@@ -614,76 +466,56 @@
           <h1
             class="max-w-[155px] sm:max-w-[310px] md:max-w-none font-bold text-transparent text-4xl lg:text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% leading-tight">
             O que nossos clientes estão dizendo</h1>
-          <div id="carouselExampleCaptions" class="relative w-full mt-16 sm:mt-12 sm:max-w-[600px] mx-auto"
-            data-te-carousel-init data-te-ride="carousel">
-            <!--Carousel indicators-->
-            <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] flex list-none justify-center p-0"
-              data-te-carousel-indicators>
-              <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0"
-                data-te-carousel-active
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-label="Slide 2"></button>
-              <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-label="Slide 3"></button>
-            </div>
-
-            <!--Carousel items-->
-            <div class="relative overflow-hidden rounded-lg h-[700px] sm:h-[580px] lg:h-[476px] shadow-3xl">
-              <!--First item-->
-              <div
-                class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
-                data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
-                <img src="./img/icons/aspas.png">
-                <h1 class="text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
-                  desenvolver algo que traga valor para minha empresa!</h1>
-                <p class="text-base lg:text-2xl mt-12">Eu achei lindo! Reflete exatamente o que eu queria passar aos que
-                  forem
-                  buscar pela minha marca.</p>
-                <div
-                  class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
-                  <img src="./img/clientes/mariana-marin-monteiro.png"
-                    class="w-16 h-16 rounded-full mx-auto">
-                  <div class="ml-2 sm:ml-6">
-                    <p class="text-lg lg:text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
-                    <p class="text-base leading-none">Cirurgiã-destista</p>
+          <div class="swiper !w-full !py-12 mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="!bg-center !bg-cover !h-full !w-[500px] swiper-slide">
+                <div class="relative p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md h-[500px] rounded-lg shadow-3xl">
+                  <img src="./img/icons/aspas.png" class="w-11">
+                  <h1 class="text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
+                    desenvolver algo que traga valor para minha empresa!</h1>
+                  <p class="text-base lg:text-2xl mt-12">Eu achei lindo! Reflete exatamente o que eu queria passar aos que
+                    forem
+                    buscar pela minha marca.</p>
+                  <div
+                    class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
+                    <img src="./img/clientes/mariana-marin-monteiro.png"
+                      class="w-16 h-16 rounded-full mx-auto">
+                    <div class="ml-2 sm:ml-6">
+                      <p class="text-lg lg:text-2xl font-bold leading-none">Mariana Marin Monteiro</p>
+                      <p class="text-base leading-none">Cirurgiã-destista</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!--Second item -->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
-                data-te-carousel-fade data-te-carousel-item>
-                <img src="./img/icons/aspas.png">
-                <h1 class="text-3xl font-bold mt-12">Extremamente profisisonal</h1>
-                <p class="text-base lg:text-2xl mt-12">Superou minhas expectativas, um trabalho assertivo, rápido e com
-                  valor
-                  justo!</p>
-                <div
-                  class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
-                  <img src="./img/clientes/emerson-quaresma.png" class="w-16 h-16 rounded-full mx-auto">
-                  <div class="ml-2 sm:ml-6">
-                    <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
-                    <p class="text-base leading-none">Empresário</p>
+              <div class="!bg-center !bg-cover !h-full !w-[500px] swiper-slide">
+                <div class="relative p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md h-[500px] rounded-lg shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Extremamente profisisonal</h1>
+                  <p class="text-base lg:text-2xl mt-12">Superou minhas expectativas, um trabalho assertivo, rápido e com
+                    valor
+                    justo!</p>
+                  <div
+                    class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
+                    <img src="./img/clientes/emerson-quaresma.png" class="w-16 h-16 rounded-full mx-auto">
+                    <div class="ml-2 sm:ml-6">
+                      <p class="text-2xl font-bold leading-none">Emerson Quaresma</p>
+                      <p class="text-base leading-none">Empresário</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!--Third item -->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md md:backdrop-blur-none h-full"
-                data-te-carousel-fade data-te-carousel-item>
-                <img src="./img/icons/aspas.png">
-                <h1 class="text-3xl font-bold mt-12">Profissionalismo puro</h1>
-                <p class="text-base lg:text-2xl mt-12">Excelente</p>
-                <div
-                  class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
-                  <img src="./img/clientes/leonardo.png" class="w-16 h-16 rounded-full mx-auto">
-                  <div class="ml-2 sm:ml-6">
-                    <p class="text-2xl font-bold leading-none">Leonardo</p>
-                    <p class="text-base leading-none">Empresário</p>
+              <div class="!bg-center !bg-cover !h-full !w-[500px] swiper-slide">
+                <div class="relative p-3 lg:p-6 text-white bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md h-[500px] rounded-lg shadow-3xl">
+                  <img src="./img/icons/aspas.png">
+                  <h1 class="text-3xl font-bold mt-12">Profissionalismo puro</h1>
+                  <p class="text-base lg:text-2xl mt-12">Excelente</p>
+                  <div
+                    class="absolute left-0 sm:left-6 bottom-10 lg:bottom-6 flex flex-col sm:flex-row sm:items-center justify-center w-full sm:w-auto mt-12 space-y-5 sm:space-y-0">
+                    <img src="./img/clientes/leonardo.png" class="w-16 h-16 rounded-full mx-auto">
+                    <div class="ml-2 sm:ml-6">
+                      <p class="text-2xl font-bold leading-none">Leonardo</p>
+                      <p class="text-base leading-none">Empresário</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -785,8 +617,9 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

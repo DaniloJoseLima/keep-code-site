@@ -118,3 +118,52 @@ function alterValues(value) {
     buttonStep02.classList.add('opacity-100');
   }
 }
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 2000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1280: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
+});
+
+var swiper = new Swiper(".mySwiper2", {
+  autoplay: {
+    delay: 2000,
+  },
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
