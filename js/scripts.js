@@ -46,6 +46,10 @@ mobileMenuButton.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });
 
+function hiddenMenu() {
+  mobileMenu.classList.toggle('hidden');
+}
+
 function alterValues(value) {
   let benefitsTitle = document.getElementById('benefitsTitle');
   let benefitsText = document.getElementById('benefitsText');
@@ -126,19 +130,15 @@ var swiper = new Swiper(".mySwiper", {
     delay: 2000,
   },
   slidesPerView: 1,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  spaceBetween: 50,
   breakpoints: {
     640: {
       slidesPerView: 2,
-      spaceBetween: 0,
+      spaceBetween: 30,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 0,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 4,
