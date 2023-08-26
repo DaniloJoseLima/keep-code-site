@@ -28,6 +28,7 @@
 
   <!-- CARROSSEL -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
   <title>Keep Code</title>
 </head>
@@ -297,8 +298,10 @@
         class="font-bold text-transparent text-4xl md:text-5xl sm:text-center bg-clip-text bg-gradient-to-l from-[#AB1D84] from-50% to-[#09F4F9] to-90% !leading-tight mb-8">
         Projetos Recentes</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-[10px] sm:gap-4">
-        <img src="./img/projetos/mmm.png" class="img-right-shadown mt-auto">
-        <div class="order-2 sm:order-none grid grid-cols-2 gap-[10px] sm:gap-4 items-end sm:pt-6 lg:pt-14 -mt-4 sm:mt-0">
+        <img data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+        data-te-animation="[fade-in-right_1s_ease-in-out]" src="./img/projetos/mmm.png" class="img-right-shadown mt-auto">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-left_1s_ease-in-out]" class="order-2 sm:order-none grid grid-cols-2 gap-[10px] sm:gap-4 items-end sm:pt-6 lg:pt-14 -mt-4 sm:mt-0">
           <div class="relative col-span-2 flex items-center sm:h-[86px] lg:h-[148px] xl:h-[192px] img-right-shadown">
             <img src="./img/projetos/fundo_roxo.png" class="hidden sm:block top-0 left-0 h-full w-full">
             <img src="./img/projetos/fundo_roxo-320.png" class="block sm:hidden top-0 left-0 h-full min-h-[99px] w-full">
@@ -306,7 +309,8 @@
           <img src="./img/projetos/pao_de_queijo.png" class="h-full img-right-shadown">
           <img src="./img/projetos/pixel.png" class="h-full img-right-shadown">
         </div>
-        <div class="order-1 sm:order-none grid grid-cols-2 gap-[10px] sm:gap-4">
+        <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-up_1s_ease-in-out]" class="order-1 sm:order-none grid grid-cols-2 gap-[10px] sm:gap-4">
           <div
             class="col-span-2 img-right-shadown">
             <img src="./img/projetos/fundo_vermelho.png" class="max-h-212px w-full">
@@ -314,7 +318,8 @@
           <img src="./img/projetos/cafe_passado.png" class="xl:h-full img-right-shadown">
           <img src="./img/projetos/owner.png" class="xl:h-full xl:w-full img-right-shadown max-h-[187px]">
         </div>
-        <img src="./img/projetos/sl.png" class="order-3 sm:order-none img-right-shadown">
+        <img data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+          data-te-animation="[fade-in-down_1s_ease-in-out]" src="./img/projetos/sl.png" class="order-3 sm:order-none img-right-shadown">
       </div>
     </section>
   </scroll-container>
@@ -348,7 +353,8 @@
       <h1
         class="font-bold text-transparent text-4xl md:text-5xl text-left bg-clip-text bg-gradient-to-l from-[#AB1D84] from-30% to-[#09F4F9] to-90% !leading-tight tracking-[-0.3px] lg:tracking-normal mb-8">
         Tem algum projeto em mente?</h1>
-      <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 mb-2 sm:mb-4 items-end">
+      <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+      data-te-animation="[fade-in-left_1s_ease-in-out]"  class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 mb-2 sm:mb-4 items-end">
         <img src="./img/contate_nos/01-img.png" class="hidden xl:block w-full img-right-shadown">
         <img src="./img/contate_nos/02-img.png" class="hidden sm:block w-full img-right-shadown">
         <img src="./img/contate_nos/03-img.png" class="w-full img-right-shadown">
@@ -358,7 +364,8 @@
           <p class="block md:hidden text-white text-base sm:text-xl lg:text-2xl max-w-[282px] mx-auto tracking-[-0.3px] lg:tracking-normal">Projetos <b>personalizados</b></p>
         </div>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4">
+      <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-reset="true"
+      data-te-animation="[fade-in-right_1s_ease-in-out]" class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4">
         <div class="hidden sm:block m-auto">
           <div class="inline-block bg-gradient-to-r from-[#09F4F9] to-[#AB1D84] rounded-[28px] p-1 hover:opacity-70">
             <a href="#orcamento" class="inline-block text-2xl text-blue-light border-4 rounded-[28px] border-white">
@@ -472,7 +479,7 @@
             O que nossos clientes estão dizendo</h1>
           <div class="swiper mySwiper2 !w-full !py-9 !lg:py-12 mt-10">
             <div class="swiper-wrapper">
-              <div class="!bg-center !bg-cover h-[700px] !sm:h-[561px] !md:h-full !w-full !sm:w-[400px] !md:w-[500px] swiper-slide">
+              <div class="!bg-center !bg-cover h-[700px] sm:!h-[561px] md:!h-full !w-full sm:!w-[400px] md:!w-[500px] swiper-slide">
                 <div class="relative p-3 lg:p-6 text-white bg-gray-dark sm:bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md h-full md:h-[550px] rounded-lg shadow-3xl">
                   <img src="./img/icons/aspas.png" class="w-11">
                   <h1 class="text-3xl font-bold mt-12">Me surpreendeu o cuidado e a sensibilidade de vocês em
@@ -491,7 +498,7 @@
                   </div>
                 </div>
               </div>
-              <div class="!bg-center !bg-cover h-[700px] !sm:h-[561px] !md:h-full !w-full !sm:w-[400px] !md:w-[500px] swiper-slide">
+              <div class="!bg-center !bg-cover h-[700px] sm:!h-[561px] md:!h-full !w-full sm:!w-[400px] md:!w-[500px] swiper-slide">
                 <div class="relative p-3 lg:p-6 text-white bg-gray-dark sm:bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md h-full md:h-[550px] rounded-lg shadow-3xl">
                   <img src="./img/icons/aspas.png">
                   <h1 class="text-3xl font-bold mt-12">Extremamente profisisonal</h1>
@@ -508,7 +515,7 @@
                   </div>
                 </div>
               </div>
-              <div class="!bg-center !bg-cover h-[700px] !sm:h-[561px] !md:h-full !w-full !sm:w-[400px] !md:w-[500px] swiper-slide">
+              <div class="!bg-center !bg-cover h-[700px] sm:!h-[561px] md:!h-full !w-full sm:!w-[400px] md:!w-[500px] swiper-slide">
                 <div class="relative p-3 lg:p-6 text-white bg-gray-dark sm:bg-gray-dark/50 md:bg-gray-dark backdrop-blur-md h-full md:h-[550px] rounded-lg shadow-3xl">
                   <img src="./img/icons/aspas.png">
                   <h1 class="text-3xl font-bold mt-12">Profissionalismo puro</h1>
@@ -590,7 +597,7 @@
   </scroll-container>
   <footer class="bg-blue-dark flex items-center w-full py-6 md:py-0 md:h-[100px]">
     <div class="container lg:max-w-5xl xl:max-w-7xl mx-auto text-center px-3 2xl:px-0">
-      <div class="flex items-center justify-between flex-col md:flex-row space-y-8">
+      <div class="flex items-center justify-between flex-col md:flex-row space-y-8 md:space-y-0">
         <div class="md:order-1 text-center md:text-left">
           <div class="flex flex-col md:flex-row items-center space-x-6 space-y-6 md:space-y-0">
             <div class="flex flex-col md:flex-row space-y-8 md:space-y-2 space-x-6">
@@ -620,6 +627,8 @@
       </div>
     </div>
   </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
