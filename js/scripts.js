@@ -130,7 +130,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 2000,
   },
   slidesPerView: 1,
-  spaceBetween: 50,
+  spaceBetween: 0,
   breakpoints: {
     640: {
       slidesPerView: 2,
