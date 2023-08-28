@@ -127,7 +127,7 @@ function alterValues(value) {
 
 var swiper = new Swiper(".mySwiper", {
   autoplay: {
-    delay: 2000,
+    delay: 1000,
   },
   slidesPerView: 1,
   spaceBetween: 0,
