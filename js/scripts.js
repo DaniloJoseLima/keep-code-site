@@ -6,10 +6,7 @@ let value = params.send;
 
 let url = window.location.href;
 url = url.split(/[?#]/)[0];
-const form = document.querySelector('#form');
-form.innerHTML += `
-<input type="hidden" name="_next" value="${url}?send=true#contact">
-`
+
 
 if (value) {
   const formSuccess = document.querySelector('#formSuccess');
@@ -43,11 +40,13 @@ const mobileMenuButton = document.querySelector('#mobileMenuButton');
 const mobileMenu = document.querySelector('#mobileMenu');
 
 mobileMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
+  mobileMenu.classList.toggle('-translate-x-full');
+  mobileMenu.classList.toggle('translate-x-0');
 });
 
 function hiddenMenu() {
-  mobileMenu.classList.toggle('hidden');
+  mobileMenu.classList.toggle('-translate-x-full');
+  mobileMenu.classList.toggle('translate-x-0');
 }
 
 function alterValues(value) {

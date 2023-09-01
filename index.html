@@ -65,7 +65,7 @@
       </button>
 
       <!-- Mobile Menu (hidden by default) -->
-      <ul id="mobileMenu" class="hidden lg:hidden absolute top-16 right-0 bg-gra p-4 space-y-4 w-full h-screen bg-white backdrop-blur-2xl z-50 text-center">
+      <ul id="mobileMenu" class="absolute top-16 right-0 bg-gra p-4 space-y-4 w-full h-screen bg-white backdrop-blur-2xl z-50 text-center transition ease-in-out delay-150 -translate-x-full">
         <li><a href="#quemSomos" onclick="hiddenMenu()" class="text-blue-dark block">Quem somos</a></li>
         <li><a href="#servicos" onclick="hiddenMenu()" class="text-blue-dark block">Serviços</a></li>
         <li><a href="#projetosRecentes" onclick="hiddenMenu()" class="text-blue-dark block">Projetos recentes</a></li>
@@ -576,6 +576,7 @@
           <form data-anime="center" id="form" action="https://formsubmit.co/danilolima40@gmail.com" method="POST" class="w-full max-w-[450px] lg:max-w-none mx-auto lg:mx-0 mt-8 sm:mt-5 pl-2 sm:pl-6 xl:pl-16 pr-2 sm:pr-6 xl:pr-28">
             <input type="hidden" name="_cc" value="cael.tecnologia@gmail.com">
             <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://keepcode.com.br?send=true#contact">
             <div class="grid grid-cols-1 gap-5">
               <div>
                 <p class="text-base text-gray-light font-semibold leading-none mb-2">Nome</p>

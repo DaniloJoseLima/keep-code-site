@@ -34,7 +34,7 @@ p, a, button, input, textarea, li {
 
 [data-anime="center"] {
   transform: translate3d(0, 0, 0);
-  transition: 0.5s;
+  transition: 1s;
 }
 
 [data-anime].animate {
